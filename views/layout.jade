@@ -18,29 +18,58 @@ html(class='no-js', lang='en')
         // Place favicon.ico and apple-touch-icon.png in the root directory
 
         if (env == 'dev')
-            link(rel='stylesheet', href='/css/bootstrap.min.css')
+            //link(rel='stylesheet', href='/css/bootstrap.min.css')
         else
             link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
 
         link(rel='stylesheet', href='/css/main.css')
 
+        block styles
+
+        script(src="/js/modernizr.custom.js")
         //[if lt IE 9]
             script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
             script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
-            script(src="js/json3.min.js")
 
     body
 
-        .navbar.navbar-default.navbar-fixed-top
+        #site-header
             .container
-                .navbar-header
-                    a.navbar-brand(href="/") Sequitur
+                .main-nav-toggle(data-toggle="collapse", data-target=".main-nav-collapse")
+                h1
+                    a(href="/") Sequitur.
+
+        #main-nav
+            ul.container
+                li
+                    a(href="/#how-were-different") How We're Different
+                li
+                    a(href="/#what-we-do") What We Do
+                li
+                    a(href="/#how-we-do-it") How We Do It
+                li
+                    a(href="/#who-we-are") Who We Are
+                li
+                    a(href="/#what-we-think") What We Think
+                li
+                    a(href="/#who-we-toil-for") Who We Toil For
+                li
+                    a(href="/#our-studio") Our Studio
+                li
+                    a(href="/#how-to-reach-us") How to Reach Us
+
         block content
 
         if (env == 'dev')
             script(src="/js/jquery-1.10.2.min.js")
-            script(src="/js/bootstrap.min.js")
+            //script(src="/js/bootstrap.min.js")
             script(src="//localhost:35729/livereload.js")
         else
             script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-            script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js")
+            //script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js")
+
+        script(src="/js/jquery.smooth-scroll.min.js")
+        script(src="/js/main.js")
+        script(src="/js/main-nav.js")
+
+        block scripts

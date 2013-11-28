@@ -1,0 +1,48 @@
+
+/**
+ * Colfax font
+ * TODO: Change to actual Colfax webfont
+**/
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-Light");
+}
+
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-LightItalic");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-Book");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-BookItalic");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Colfax Regular";
+  src: local("Chrono-Regular");
+}
+
+/**
+ * Sentinel font
+ * TODO: Change to actual Sentinel webfont
+**/
+@font-face {
+  font-family: "Sentinel";
+  src: local("Sentinel-Black");
+}
+
+@font-face {
+  font-family: "Sentinel";
+  src: local("Sentinel-BlackItalic");
+  font-style: italic;
+}

@@ -2,3 +2,283 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Colors */
+/* Fonts */
+/* Dimensions */
+/**
+ * Colfax font
+ * TODO: Change to actual Colfax webfont
+**/
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-Light");
+}
+
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-LightItalic");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-Book");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Colfax Light";
+  src: local("Chrono-BookItalic");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Colfax Regular";
+  src: local("Chrono-Regular");
+}
+
+/**
+ * Sentinel font
+ * TODO: Change to actual Sentinel webfont
+**/
+@font-face {
+  font-family: "Sentinel";
+  src: local("Sentinel-Black");
+}
+
+@font-face {
+  font-family: "Sentinel";
+  src: local("Sentinel-BlackItalic");
+  font-style: italic;
+}
+
+/* line 12, ../../scss/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 16, ../../scss/main.scss */
+body {
+  font-family: "Colfax Light", Helvetica, Arial, sans-serif;
+  padding-top: 100px;
+  background-color: #f0f0f0;
+}
+
+/* line 22, ../../scss/main.scss */
+h1 {
+  font-family: "Colfax Light", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* line 27, ../../scss/main.scss */
+h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: "Sentinel", Georgia, serif;
+  font-style: italic;
+  color: #33ccff;
+}
+
+/* line 34, ../../scss/main.scss */
+img {
+  border: none;
+}
+
+/* line 38, ../../scss/main.scss */
+a, a:hover {
+  text-decoration: none;
+}
+
+/* line 42, ../../scss/main.scss */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 1, ../../scss/main-nav.scss */
+#site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  border: none;
+  background-color: #fff;
+  height: 100px;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+/* line 13, ../../scss/main-nav.scss */
+#site-header h1 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 48px 0 0;
+  padding: 0;
+  float: left;
+}
+/* line 21, ../../scss/main-nav.scss */
+#site-header h1 a {
+  color: #585858;
+}
+/* line 26, ../../scss/main-nav.scss */
+#site-header .main-nav-toggle {
+  background: url(/images/icon-menu.png) 50% 50% no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 21px;
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 50px;
+  float: right;
+  display: block;
+}
+/* line 38, ../../scss/main-nav.scss */
+#site-header.nav-open {
+  background-color: #33ccff;
+}
+/* line 43, ../../scss/main-nav.scss */
+#site-header.nav-open h1 a {
+  color: #fff;
+}
+/* line 48, ../../scss/main-nav.scss */
+#site-header.nav-open .main-nav-toggle {
+  background-image: url(/images/icon-close.png);
+}
+
+/* line 54, ../../scss/main-nav.scss */
+#main-nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  top: -100%;
+  left: 0;
+  background: rgba(51, 204, 255, 0.95);
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease-out;
+  -moz-transition: opacity 0.15s ease-out;
+  -o-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+/* line 67, ../../scss/main-nav.scss */
+#main-nav li {
+  opacity: 0;
+  -webkit-transform: translateX(-25px);
+  -moz-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  -o-transform: translateX(-25px);
+  transform: translateX(-25px);
+  -webkit-transition: all 0.2s ease-out;
+  -webkit-transition-delay: 0.15s;
+  -moz-transition: all 0.2s ease-out 0.15s;
+  -o-transition: all 0.2s ease-out 0.15s;
+  transition: all 0.2s ease-out 0.15s;
+}
+/* line 73, ../../scss/main-nav.scss */
+#main-nav a {
+  color: #fff;
+  font-family: "Sentinel", Georgia, serif;
+  font-style: italic;
+  font-size: 36px;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+/* line 81, ../../scss/main-nav.scss */
+#main-nav a.active, #main-nav a:hover {
+  color: #585858;
+}
+/* line 86, ../../scss/main-nav.scss */
+#main-nav.open {
+  top: 0;
+  opacity: 1;
+}
+/* line 90, ../../scss/main-nav.scss */
+#main-nav.open li {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 52, ../../scss/main.scss */
+.test {
+  background-color: #0d3349;
+  height: 600px;
+  margin-bottom: 40px;
+}

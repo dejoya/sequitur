@@ -53,6 +53,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           sassDir: 'scss',
+          specify: ['scss/main.scss', 'scss/ie.scss', 'scss/home.scss'],
           cssDir: 'public/css'
         }
       }
@@ -62,7 +63,7 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express-server');
-  grunt.loadNpmTasks('grunt-compass');
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
 
   grunt.registerTask('serve', function(target){

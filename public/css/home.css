@@ -1,0 +1,8 @@
+/* line 2, ../../scss/home.scss */
+#hero .item {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}

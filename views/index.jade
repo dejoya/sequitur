@@ -1,5 +1,31 @@
 extends layout
 
+block styles
+    link(rel="stylesheet", href="/css/owl.carousel.css")
+    link(rel="stylesheet", href="/css/home.css")
+
 block content
-  h1= title
-  p Welcome to #{title}
+
+    section#hero(data-id="how-were-different")
+        .owl-carousel
+            .item(style="background-image: url(/images/fpo-1.jpg)")
+                .container
+                    h2
+                        | We help brands be
+                        br
+                        | their better selves.
+            .item(style="background-image: url(/images/fpo-1.jpg)")
+                .container
+                    h2
+                        | We and something else
+                        br
+                        | their better selves.
+
+    section.test(data-id="what-we-do")
+    section.test(data-id="how-we-do-it")
+    section.test(data-id="who-we-are")
+
+block scripts
+    script(src="/js/hash-poll.js")
+    script(src="/js/owl.carousel.min.js")
+    script(src="/js/home.js")

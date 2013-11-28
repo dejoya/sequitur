@@ -1,0 +1,95 @@
+#site-header {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  border: none;
+  background-color: #fff;
+  height: $headerHeight;
+  @include transition(background-color .15s ease-in-out);
+
+  h1 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 48px 0 0;
+    padding: 0;
+    float: left;
+
+    a {
+      color: $defaultFontColor;
+    }
+  }
+
+  .main-nav-toggle {
+    background: url(/images/icon-menu.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 21px;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 50px;
+    float: right;
+    display: block;
+  }
+
+  &.nav-open {
+
+    background-color: $blue;
+
+    h1 {
+      a {
+        color: #fff;
+      }
+    }
+
+    .main-nav-toggle {
+      background-image: url(/images/icon-close.png);
+    }
+  }
+}
+
+#main-nav {
+
+  position: fixed;
+  z-index: 1000; //site-header is 1001
+  width: 100%;
+  height: 100%;
+  padding-top: $headerHeight;
+  top: -100%;
+  left: 0;
+  background: rgba(51,204,255,.95);
+  opacity: 0;
+  @include transition(opacity .15s ease-out);
+
+  li {
+    opacity: 0;
+    @include translateX(-25px);
+    @include transition(all .2s ease-out .15s);
+  }
+
+  a {
+    color: #fff;
+    font-family: $sentinelStack;
+    font-style: italic;
+    font-size: 36px;
+
+    @include transition(color .2s ease-out);
+
+    &.active, &:hover {
+      color: $defaultFontColor;
+    }
+  }
+
+  &.open {
+    top: 0;
+    opacity: 1;
+
+    li {
+      opacity: 1;
+      @include translateX(0);
+    }
+  }
+}
