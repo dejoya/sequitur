@@ -1,7 +1,7 @@
 /* Colors */
 $defaultFontColor: #585858;
 $blue: #33ccff;
-
+$darkGray: #231f20;
 
 /* Fonts */
 $defaultStack: "Colfax Light", Helvetica, Arial, sans-serif;
@@ -9,4 +9,10 @@ $sentinelStack: "Sentinel", Georgia, serif;
 
 
 /* Dimensions */
+$headerPhoneHeight: 50px;
 $headerHeight: 100px;
+$touchpointPadding: 15px;
+
+/* Media Queries */
+$mqTabletWidth: "only screen and (min-width: 570px)";
+$mqDesktopWidth: "only screen and (min-width: 769px)";

@@ -1,0 +1,46 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.border-line {
+  content:"";
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 24px;
+}
+
+.top-line {
+  :before {
+    @extend .border-line;
+  }
+}
+
+.bottom-line {
+  :after {
+    @extend .border-line;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.cta {
+  @extend .circle;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: $blue url(/images/arrow-cta.png) 50% 50% no-repeat;
+  background-size: 11px 18px;
+  margin-left: 15px;
+}

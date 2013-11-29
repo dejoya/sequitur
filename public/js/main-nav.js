@@ -38,9 +38,9 @@
                 $this.addClass('active');
             });
 
-            $('li', $nav).each(function (i) {
-                $(this).css('webkitTransitionDelay', (150 + 30 * i) + 'ms')
-            });
+//            $('li', $nav).each(function (i) {
+//                $(this).css('webkitTransitionDelay', (100 + 15 * i) + 'ms')
+//            });
         }
 
         function close() {

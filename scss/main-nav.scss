@@ -7,14 +7,14 @@
   z-index: 1001;
   border: none;
   background-color: #fff;
-  height: $headerHeight;
+  height: $headerPhoneHeight;
   @include transition(background-color .15s ease-in-out);
 
   h1 {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    margin: 48px 0 0;
+    margin: 13px 0 0;
     padding: 0;
     float: left;
 
@@ -24,15 +24,17 @@
   }
 
   .main-nav-toggle {
-    background: url(/images/icon-menu.png) 50% 50% no-repeat;
-    background-size: contain;
-    width: 24px;
-    height: 21px;
-    border-radius: 0;
-    cursor: pointer;
-    margin-top: 50px;
+    padding: $touchpointPadding;
     float: right;
-    display: block;
+
+    span {
+      background: url(/images/icon-menu.png) 50% 50% no-repeat;
+      display: block;
+      width: 24px;
+      height: 21px;
+      background-size: contain;
+      cursor: pointer;
+    }
   }
 
   &.nav-open {
@@ -46,7 +48,9 @@
     }
 
     .main-nav-toggle {
-      background-image: url(/images/icon-close.png);
+      span {
+        background-image: url(/images/icon-close.png);
+      }
     }
   }
 }
@@ -57,26 +61,59 @@
   z-index: 1000; //site-header is 1001
   width: 100%;
   height: 100%;
-  padding-top: $headerHeight;
+  padding-top: $headerPhoneHeight;
   top: -100%;
   left: 0;
   background: rgba(51,204,255,.95);
-  opacity: 0;
-  @include transition(opacity .15s ease-out);
+  //opacity: 0;
+  @include transition(top 150ms ease-out);
 
   li {
+    position: relative;
+    padding: 8px 0;
     opacity: 0;
-    @include translateX(-25px);
-    @include transition(all .2s ease-out .15s);
+    @include translateY(-10px);
+    @include transition(all 150ms ease-in-out 120ms);
+
+    @extend .top-line;
+
+    &:nth-child(2){
+      @include transition-delay(130ms)
+    }
+
+    &:nth-child(3){
+      @include transition-delay(140ms)
+    }
+
+    &:nth-child(4){
+      @include transition-delay(150ms)
+    }
+
+    &:nth-child(5){
+      @include transition-delay(160ms)
+    }
+
+    &:nth-child(6){
+      @include transition-delay(170ms)
+    }
+
+    &:nth-child(7){
+      @include transition-delay(180ms)
+    }
+
+    &:last-child {
+      @extend .bottom-line;
+      @include transition-delay(190ms);
+    }
   }
 
   a {
     color: #fff;
     font-family: $sentinelStack;
     font-style: italic;
-    font-size: 36px;
+    font-size: 16px;
 
-    @include transition(color .2s ease-out);
+    @include transition(color 120ms ease-in-out);
 
     &.active, &:hover {
       color: $defaultFontColor;
@@ -89,7 +126,35 @@
 
     li {
       opacity: 1;
-      @include translateX(0);
+      @include translateY(0);
     }
   }
+}
+
+@media #{$mqTabletWidth}{
+  #site-header {
+    height: $headerHeight;
+
+    h1 {
+      margin-top: 46px;
+    }
+
+    .main-nav-toggle {
+      margin-top: 50px;
+      padding: 0;
+    }
+  }
+
+  #main-nav {
+    padding-top: $headerHeight;
+
+    li {
+      padding: 15px 0;
+    }
+
+    a {
+      font-size: 36px;
+    }
+  }
+
 }

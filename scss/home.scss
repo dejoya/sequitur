@@ -3,7 +3,52 @@
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    height: 500px;
+    min-height: 500px;
     width: 100%;
+    background-color: $defaultFontColor;
+
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 10px;
+
+      .cta {
+        margin-bottom: -8px;
+      }
+    }
+  }
+
+  .owl-pagination {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+
+    .owl-page {
+
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      padding: 7.5px;
+      font-size: 0;
+
+      span {
+        @extend .circle;
+        width: 15px;
+        height: 15px;
+        display: block;
+        background-color: #fff;
+        @include transition(background-color 400ms ease-in-out);
+        box-shadow: 0 0 2px rgba(0,0,0,.5);
+      }
+
+      &.active {
+        span {
+          background-color: $blue;
+        }
+      }
+    }
+
   }
 }

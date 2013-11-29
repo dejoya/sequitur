@@ -53,7 +53,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           sassDir: 'scss',
-          specify: ['scss/main.scss', 'scss/ie.scss', 'scss/home.scss'],
+          specify: ['scss/main.scss', 'scss/ie.scss'],
           cssDir: 'public/css'
         }
       }
