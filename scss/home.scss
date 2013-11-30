@@ -1,17 +1,19 @@
 #hero {
+
   .item {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     min-height: 500px;
     width: 100%;
-    background-color: $defaultFontColor;
+    background-color: $lightGray;
 
 
     p {
       font-size: 18px;
       line-height: 30px;
       margin-top: 10px;
+      color: $darkGray;
 
       .cta {
         margin-bottom: -8px;

@@ -1,7 +1,7 @@
 .container {
   max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: auto;
   overflow: hidden;
 }
@@ -12,7 +12,7 @@
 
 .border-line {
   content:"";
-  background: #fff;
+  background: $blue;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,14 +21,31 @@
 }
 
 .top-line {
-  :before {
+  position: relative;
+  padding-top: .5em;
+  &:before {
     @extend .border-line;
   }
 }
 
+.top-line-white {
+  @extend .top-line;
+  &:before {
+    background: #fff;
+  }
+}
+
+.top-line-gray {
+  @extend .top-line;
+  &:before {
+    background: $lightGray;
+  }
+}
+
 .bottom-line {
-  :after {
+  &:after {
     @extend .border-line;
+    background: #fff;
     top: auto;
     bottom: 0;
   }
@@ -43,4 +60,87 @@
   background: $blue url(/images/arrow-cta.png) 50% 50% no-repeat;
   background-size: 11px 18px;
   margin-left: 15px;
+}
+
+.light-bg {
+  background-color: #fff;
+}
+
+.dark-bg {
+  background-color: $black;
+  color: #fff;
+}
+
+.vertical-pad {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sub-head {
+  font-size: 18px;
+}
+
+.row {
+  @include clearfix;
+
+  .col {
+    margin: 40px 0;
+  }
+
+}
+
+@media #{$mqTabletWidth}{
+  .sub-head {
+    font-size: 24px;
+  }
+
+  .row {
+
+    .col {
+      float: left;
+      padding-left: 40px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.col-2 {
+      .col {
+        width: 50%;
+      }
+    }
+
+    &.col-3 {
+      .col {
+        width: 33%;
+
+        &:last-child {
+          float: right;
+        }
+
+        &.span-2 {
+          width: 67%;
+        }
+      }
+    }
+
+    &.col-4 {
+      .col {
+        width: 25%;
+
+        &.span-2 {
+          width: 50%;
+        }
+
+        &.span-3 {
+          width: 75%;
+        }
+      }
+    }
+  }
 }

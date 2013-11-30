@@ -8,6 +8,7 @@
   border: none;
   background-color: #fff;
   height: $headerPhoneHeight;
+  box-shadow: 0 0 2px 1px rgba(0,0,0,.25);
   @include transition(background-color .15s ease-in-out);
 
   h1 {
@@ -19,7 +20,7 @@
     float: left;
 
     a {
-      color: $defaultFontColor;
+      color: $lightGray;
     }
   }
 
@@ -40,6 +41,7 @@
   &.nav-open {
 
     background-color: $blue;
+    box-shadow: none;
 
     h1 {
       a {
@@ -70,12 +72,12 @@
 
   li {
     position: relative;
-    padding: 8px 0;
+    padding: 10px 0;
     opacity: 0;
     @include translateY(-10px);
     @include transition(all 150ms ease-in-out 120ms);
 
-    @extend .top-line;
+    @extend .top-line-white;
 
     &:nth-child(2){
       @include transition-delay(130ms)
@@ -111,7 +113,7 @@
     color: #fff;
     font-family: $sentinelStack;
     font-style: italic;
-    font-size: 16px;
+    font-size: 18px;
 
     @include transition(color 120ms ease-in-out);
 
