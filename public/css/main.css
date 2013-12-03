@@ -119,28 +119,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: italic;
 }
 
-/* line 14, ../../scss/main.scss */
+/* line 15, ../../scss/main.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 18, ../../scss/main.scss */
+/* line 19, ../../scss/main.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 23, ../../scss/main.scss */
 body {
   font-family: "Colfax Light", Helvetica, Arial, sans-serif;
   padding-top: 50px;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   color: #59595c;
 }
 
-/* line 25, ../../scss/main.scss */
+/* line 30, ../../scss/main.scss */
 h1 {
   font-family: "Colfax Light", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 30, ../../scss/main.scss */
+/* line 35, ../../scss/main.scss */
 h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: "Sentinel", Georgia, serif;
@@ -148,37 +153,42 @@ h2, h3, h4, h5, h6 {
   color: #33ccff;
 }
 
-/* line 37, ../../scss/main.scss */
+/* line 42, ../../scss/main.scss */
 h2 {
   font-size: 30px;
+  line-height: 29px;
 }
 
-/* line 41, ../../scss/main.scss */
+/* line 47, ../../scss/main.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 45, ../../scss/main.scss */
+/* line 51, ../../scss/main.scss */
 h4 {
   font-size: 21px;
 }
 
-/* line 49, ../../scss/main.scss */
+/* line 55, ../../scss/main.scss */
 p {
-  font-size: 12px;
+  font-size: 1.2rem;
   margin: 1em 0;
 }
-/* line 53, ../../scss/main.scss */
+/* line 59, ../../scss/main.scss */
 p.large {
-  font-size: 16px;
+  font-size: 1.3rem;
+}
+/* line 63, ../../scss/main.scss */
+p.xlarge {
+  font-size: 1.5rem;
 }
 
-/* line 58, ../../scss/main.scss */
+/* line 68, ../../scss/main.scss */
 img {
   border: none;
 }
 
-/* line 62, ../../scss/main.scss */
+/* line 72, ../../scss/main.scss */
 a, a:hover {
   text-decoration: none;
 }
@@ -193,7 +203,7 @@ a, a:hover {
 }
 
 /* line 9, ../../scss/shared.scss */
-.circle, .cta, #hero .owl-pagination .owl-page span {
+.circle, .cta, .owl-controls .owl-buttons div, .owl-controls .owl-pagination .owl-page span {
   border-radius: 50%;
 }
 
@@ -216,7 +226,7 @@ a, a:hover {
 
 /* line 33, ../../scss/shared.scss */
 .top-line-white:before, #main-nav li:before {
-  background: #fff;
+  background: white;
 }
 
 /* line 40, ../../scss/shared.scss */
@@ -226,102 +236,173 @@ a, a:hover {
 
 /* line 46, ../../scss/shared.scss */
 .bottom-line:after, #main-nav li:last-child:after {
-  background: #fff;
+  background: white;
   top: auto;
   bottom: 0;
 }
 
 /* line 54, ../../scss/shared.scss */
-.cta {
+.cta, .owl-controls .owl-buttons div {
   display: inline-block;
   width: 30px;
   height: 30px;
   line-height: 30px;
-  background: #33ccff url(/images/arrow-cta.png) 50% 50% no-repeat;
+  background: #33ccff url(/images/arrow-forward.png) 55% 50% no-repeat;
   background-size: 11px 18px;
   margin-left: 15px;
 }
 
 /* line 65, ../../scss/shared.scss */
 .light-bg {
-  background-color: #fff;
+  background-color: #f1f1f1;
 }
 
 /* line 69, ../../scss/shared.scss */
+.medium-bg {
+  background-color: #585858;
+  color: #fff;
+}
+
+/* line 74, ../../scss/shared.scss */
 .dark-bg {
   background-color: #1f1f1f;
   color: #fff;
 }
 
-/* line 74, ../../scss/shared.scss */
+/* line 79, ../../scss/shared.scss */
 .vertical-pad {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* line 79, ../../scss/shared.scss */
+/* line 84, ../../scss/shared.scss */
 .sub-head {
   font-size: 18px;
+  margin-bottom: 10rem;
 }
 
-/* line 83, ../../scss/shared.scss */
+/* line 89, ../../scss/shared.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 86, ../../scss/shared.scss */
+/* line 92, ../../scss/shared.scss */
 .row .col {
   margin: 40px 0;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 93, ../../scss/shared.scss */
+  /* line 98, ../../scss/shared.scss */
   .sub-head {
     font-size: 24px;
   }
 
-  /* line 99, ../../scss/shared.scss */
+  /* line 104, ../../scss/shared.scss */
   .row .col {
     float: left;
     padding-left: 40px;
   }
-  /* line 103, ../../scss/shared.scss */
+  /* line 108, ../../scss/shared.scss */
   .row .col:first-child {
     padding-left: 0;
   }
-  /* line 107, ../../scss/shared.scss */
+  /* line 112, ../../scss/shared.scss */
   .row .col :last-child {
     margin-bottom: 0;
   }
-  /* line 113, ../../scss/shared.scss */
+  /* line 118, ../../scss/shared.scss */
   .row.col-2 .col {
     width: 50%;
   }
-  /* line 119, ../../scss/shared.scss */
+  /* line 124, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 33%;
   }
-  /* line 122, ../../scss/shared.scss */
+  /* line 127, ../../scss/shared.scss */
   .row.col-3 .col:last-child {
     float: right;
   }
-  /* line 126, ../../scss/shared.scss */
+  /* line 131, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 67%;
   }
-  /* line 133, ../../scss/shared.scss */
+  /* line 138, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 25%;
   }
-  /* line 136, ../../scss/shared.scss */
+  /* line 141, ../../scss/shared.scss */
   .row.col-4 .col.span-2 {
     width: 50%;
   }
-  /* line 140, ../../scss/shared.scss */
+  /* line 145, ../../scss/shared.scss */
   .row.col-4 .col.span-3 {
     width: 75%;
   }
 }
+/* line 3, ../../scss/owl-override.scss */
+.owl-controls .owl-pagination {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+/* line 9, ../../scss/owl-override.scss */
+.owl-controls .owl-pagination .owl-page {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 7.5px;
+  font-size: 0;
+}
+/* line 17, ../../scss/owl-override.scss */
+.owl-controls .owl-pagination .owl-page span {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: white;
+  -webkit-transition: background-color 400ms ease-in-out;
+  -moz-transition: background-color 400ms ease-in-out;
+  -o-transition: background-color 400ms ease-in-out;
+  transition: background-color 400ms ease-in-out;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+/* line 28, ../../scss/owl-override.scss */
+.owl-controls .owl-pagination .owl-page.active span {
+  background-color: #33ccff;
+}
+/* line 35, ../../scss/owl-override.scss */
+.owl-controls .owl-buttons {
+  width: 50%;
+}
+/* line 38, ../../scss/owl-override.scss */
+.owl-controls .owl-buttons div {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  float: left;
+  margin: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  -moz-transition: opacity 200ms ease-out;
+  -o-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+/* line 49, ../../scss/owl-override.scss */
+.owl-controls .owl-buttons div.owl-next {
+  float: right;
+}
+/* line 53, ../../scss/owl-override.scss */
+.owl-controls .owl-buttons div.owl-prev {
+  background-image: url(/images/arrow-back.png);
+  background-position: 45% 50%;
+}
+/* line 58, ../../scss/owl-override.scss */
+.owl-controls .owl-buttons div.disabled {
+  opacity: .5;
+  cursor: default;
+}
+
 /* line 1, ../../scss/main-nav.scss */
 #site-header {
   position: fixed;
@@ -333,10 +414,10 @@ a, a:hover {
   background-color: #fff;
   height: 50px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25);
-  -webkit-transition: background-color 0.15s ease-in-out;
-  -moz-transition: background-color 0.15s ease-in-out;
-  -o-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
+  -webkit-transition: background-color 100ms ease-in-out;
+  -moz-transition: background-color 100ms ease-in-out;
+  -o-transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
 }
 /* line 14, ../../scss/main-nav.scss */
 #site-header h1 {
@@ -389,10 +470,10 @@ a, a:hover {
   top: -100%;
   left: 0;
   background: rgba(51, 204, 255, 0.95);
-  -webkit-transition: top 150ms ease-out;
-  -moz-transition: top 150ms ease-out;
-  -o-transition: top 150ms ease-out;
-  transition: top 150ms ease-out;
+  -webkit-transition: top 100ms ease-out;
+  -moz-transition: top 100ms ease-out;
+  -o-transition: top 100ms ease-out;
+  transition: top 100ms ease-out;
 }
 /* line 73, ../../scss/main-nav.scss */
 #main-nav li {
@@ -404,60 +485,60 @@ a, a:hover {
   -ms-transform: translateY(-10px);
   -o-transform: translateY(-10px);
   transform: translateY(-10px);
-  -webkit-transition: all 150ms ease-in-out;
-  -webkit-transition-delay: 120ms;
-  -moz-transition: all 150ms ease-in-out 120ms;
-  -o-transition: all 150ms ease-in-out 120ms;
-  transition: all 150ms ease-in-out 120ms;
+  -webkit-transition: all 120ms ease-in-out;
+  -webkit-transition-delay: 100ms;
+  -moz-transition: all 120ms ease-in-out 100ms;
+  -o-transition: all 120ms ease-in-out 100ms;
+  transition: all 120ms ease-in-out 100ms;
 }
 /* line 82, ../../scss/main-nav.scss */
 #main-nav li:nth-child(2) {
+  -webkit-transition-delay: 110ms;
+  -moz-transition-delay: 110ms;
+  -o-transition-delay: 110ms;
+  transition-delay: 110ms;
+}
+/* line 86, ../../scss/main-nav.scss */
+#main-nav li:nth-child(3) {
+  -webkit-transition-delay: 120ms;
+  -moz-transition-delay: 120ms;
+  -o-transition-delay: 120ms;
+  transition-delay: 120ms;
+}
+/* line 90, ../../scss/main-nav.scss */
+#main-nav li:nth-child(4) {
   -webkit-transition-delay: 130ms;
   -moz-transition-delay: 130ms;
   -o-transition-delay: 130ms;
   transition-delay: 130ms;
 }
-/* line 86, ../../scss/main-nav.scss */
-#main-nav li:nth-child(3) {
+/* line 94, ../../scss/main-nav.scss */
+#main-nav li:nth-child(5) {
   -webkit-transition-delay: 140ms;
   -moz-transition-delay: 140ms;
   -o-transition-delay: 140ms;
   transition-delay: 140ms;
 }
-/* line 90, ../../scss/main-nav.scss */
-#main-nav li:nth-child(4) {
+/* line 98, ../../scss/main-nav.scss */
+#main-nav li:nth-child(6) {
   -webkit-transition-delay: 150ms;
   -moz-transition-delay: 150ms;
   -o-transition-delay: 150ms;
   transition-delay: 150ms;
 }
-/* line 94, ../../scss/main-nav.scss */
-#main-nav li:nth-child(5) {
+/* line 102, ../../scss/main-nav.scss */
+#main-nav li:nth-child(7) {
   -webkit-transition-delay: 160ms;
   -moz-transition-delay: 160ms;
   -o-transition-delay: 160ms;
   transition-delay: 160ms;
 }
-/* line 98, ../../scss/main-nav.scss */
-#main-nav li:nth-child(6) {
+/* line 106, ../../scss/main-nav.scss */
+#main-nav li:last-child {
   -webkit-transition-delay: 170ms;
   -moz-transition-delay: 170ms;
   -o-transition-delay: 170ms;
   transition-delay: 170ms;
-}
-/* line 102, ../../scss/main-nav.scss */
-#main-nav li:nth-child(7) {
-  -webkit-transition-delay: 180ms;
-  -moz-transition-delay: 180ms;
-  -o-transition-delay: 180ms;
-  transition-delay: 180ms;
-}
-/* line 106, ../../scss/main-nav.scss */
-#main-nav li:last-child {
-  -webkit-transition-delay: 190ms;
-  -moz-transition-delay: 190ms;
-  -o-transition-delay: 190ms;
-  transition-delay: 190ms;
 }
 /* line 112, ../../scss/main-nav.scss */
 #main-nav a {
@@ -465,10 +546,10 @@ a, a:hover {
   font-family: "Sentinel", Georgia, serif;
   font-style: italic;
   font-size: 18px;
-  -webkit-transition: color 120ms ease-in-out;
-  -moz-transition: color 120ms ease-in-out;
-  -o-transition: color 120ms ease-in-out;
-  transition: color 120ms ease-in-out;
+  -webkit-transition: color 100ms linear;
+  -moz-transition: color 100ms linear;
+  -o-transition: color 100ms linear;
+  transition: color 100ms linear;
 }
 /* line 120, ../../scss/main-nav.scss */
 #main-nav a.active, #main-nav a:hover {
@@ -517,7 +598,8 @@ a, a:hover {
     font-size: 36px;
   }
 }
-/* line 3, ../../scss/home.scss */
+/* line 5, ../../scss/home.scss */
+.sub-head
 #hero .item {
   background-size: cover;
   background-position: 50% 50%;
@@ -526,61 +608,58 @@ a, a:hover {
   width: 100%;
   background-color: #585858;
 }
-/* line 12, ../../scss/home.scss */
+/* line 14, ../../scss/home.scss */
+.sub-head
 #hero .item p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   margin-top: 10px;
   color: #231f20;
 }
-/* line 18, ../../scss/home.scss */
-#hero .item p .cta {
+/* line 20, ../../scss/home.scss */
+.sub-head
+#hero .item p .cta, .sub-head
+#hero .item p .owl-controls .owl-buttons div, .owl-controls .owl-buttons .sub-head
+#hero .item p div {
   margin-bottom: -8px;
 }
-/* line 24, ../../scss/home.scss */
-#hero .owl-pagination {
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
-  width: 100%;
+
+/* line 29, ../../scss/home.scss */
+#how-were-different .item {
+  margin-bottom: 80px;
 }
-/* line 30, ../../scss/home.scss */
-#hero .owl-pagination .owl-page {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  padding: 7.5px;
-  font-size: 0;
+/* line 33, ../../scss/home.scss */
+#how-were-different .item .number {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 /* line 38, ../../scss/home.scss */
-#hero .owl-pagination .owl-page span {
-  width: 15px;
-  height: 15px;
-  display: block;
-  background-color: #fff;
-  -webkit-transition: background-color 400ms ease-in-out;
-  -moz-transition: background-color 400ms ease-in-out;
-  -o-transition: background-color 400ms ease-in-out;
-  transition: background-color 400ms ease-in-out;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+#how-were-different .item h2 {
+  margin-bottom: 40px;
 }
-/* line 49, ../../scss/home.scss */
-#hero .owl-pagination .owl-page.active span {
-  background-color: #33ccff;
+/* line 42, ../../scss/home.scss */
+#how-were-different .item p {
+  color: #f1f1f1;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 72, ../../scss/main.scss */
+  /* line 83, ../../scss/main.scss */
+  html {
+    font-size: 12px;
+  }
+
+  /* line 87, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 76, ../../scss/main.scss */
+  /* line 91, ../../scss/main.scss */
   h2 {
     font-size: 60px;
+    line-height: 58px;
   }
 
-  /* line 80, ../../scss/main.scss */
+  /* line 96, ../../scss/main.scss */
   h3 {
     font-size: 30px;
   }

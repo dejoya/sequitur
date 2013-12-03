@@ -1,99 +1,175 @@
 extends layout
 
 block styles
-    link(rel="stylesheet", href="/css/owl.carousel.css")
+  link(rel="stylesheet", href="/css/owl.carousel.css")
 
 block content
-    .home-page
-        section#hero.no-pad
+  .home-page
+    section#hero.no-pad
+      .owl-carousel
+        .item
+          .container.vertical-center
+
+            h2
+              | We help brands be
+              br
+              | their better selves.
+            p See how we’re helping Intuit share the love.
+              a.cta(href="/portfolio")
+
+        .item
+          .container.vertical-center
+
+            h2
+              | We help brands be
+              br
+              | their better selves.
+            p See how we’re helping Intuit share the love.
+              a.cta(href="/portfolio")
+
+        .item
+          .container.vertical-center
+
+            h2
+              | We help brands be
+              br
+              | their better selves.
+            p See how we’re helping Intuit share the love.
+              a.cta(href="/portfolio")
+
+        .item
+          .container.vertical-center
+
+            h2
+              | We help brands be
+              br
+              | their better selves.
+            p See how we’re helping Intuit share the love.
+              a.cta(href="/portfolio")
+
+        .item
+          .container.vertical-center
+
+            h2
+              | We help brands be
+              br
+              | their better selves.
+            p See how we’re helping Intuit share the love.
+              a.cta(href="/portfolio")
+
+      .light-bg
+        .container
+          .row.col-3
+            .col
+              h4.top-line-gray You could say we’re just another branding firm.
+              p.large.
+                  And you wouldn’t, technically, be wrong. We do work with
+                  brands to create stories, experiences, and products that
+                  are designed to make consumers in a noisy world sit up and take notice.
+
+            .col
+              h4.top-line-gray But that would only be half of the story.
+              p.large.
+                  Because for us, branding isn’t just what you see from the outside.
+                  It starts from what’s true on the inside. It’s everything your business
+                  stands for&mdash;what you make, why you make it, and how.
+
+            .col
+              h4.top-line-gray See, we’re kind of like brand therapists.
+              p.large.
+                  We help our clients look honestly at themselves (the good and the bad),
+                  discover what makes them great, and then share that with the world in
+                  a truthful way. Consumers certainly appreciate that.
+
+    section#how-were-different.dark-bg(data-id="section-1")
+      .container
+        .row.col-3
+          .col
+            h3.top-line How We're Different
+          .col.span-2
+            .sub-head.top-line The not so secret secret to our secret sauce is our inability to leave well enough alone.
             .owl-carousel
-                .item
-                    .container.vertical-center
+              .item
+                .number 01 /
+                h2 We don't want to be your agency.
+                p.xlarge.
+                  We’d rather work quickly and collaboratively with you and your team to generate ideas that
+                  you can actually use—than to steal away to our studio to find some clever means of selling
+                  you a campaign that will be better for our book than for your bottom line. Don’t tell our
+                  accountant this, but we’d rather work for free than be embarrassed by what we’re charging.
 
-                        h2
-                            | We help brands be
-                            br
-                            | their better selves.
-                        p See how we’re helping Intuit share the love.
-                            a.cta(href="/portfolio")
+              .item
+                .number 02 /
+                h2 We don't want to be your agency.
+                p.xlarge.
+                  We’d rather work quickly and collaboratively with you and your team to generate ideas that
+                  you can actually use—than to steal away to our studio to find some clever means of selling
+                  you a campaign that will be better for our book than for your bottom line. Don’t tell our
+                  accountant this, but we’d rather work for free than be embarrassed by what we’re charging.
 
-                .item
-                    .container.vertical-center
 
-                        h2
-                            | We help brands be
-                            br
-                            | their better selves.
-                        p See how we’re helping Intuit share the love.
-                            a.cta(href="/portfolio")
+    section#what-we-do.light-bg(data-id="section-2")
+      .container
+        .row.col-3
+          .col
+            h3.top-line What We Do
+          .col.span-2
+            .sub-head.top-line.
+                We believe every brand has a story to tell.
+                <br />We strive to tell it beautifully.
 
-                .item
-                    .container.vertical-center
+    section#how-we-do-it.dark-bg(data-id="section-3")
+      .container
+        .row.col-3
+          .col
+            h3.top-line How We Do It
+          .col.span-2
+            .sub-head.top-line No two projects are ever the same. But our approach tends to be pretty consistent.
 
-                        h2
-                            | We help brands be
-                            br
-                            | their better selves.
-                        p See how we’re helping Intuit share the love.
-                            a.cta(href="/portfolio")
 
-                .item
-                    .container.vertical-center
+    section#who-we-are.light-bg(data-id="section-4")
+      .container
+        .row.col-3
+          .col
+            h3.top-line Who We Are
+          .col.span-2
+            .sub-head.top-line Meet our customer service department.
+        .row.col-3
 
-                        h2
-                            | We help brands be
-                            br
-                            | their better selves.
-                        p See how we’re helping Intuit share the love.
-                            a.cta(href="/portfolio")
 
-                .item
-                    .container.vertical-center
+    section#what-we-think.dark-bg(data-id="section-5")
+      .container
+        .row.col-3
+          .col
+            h3.top-line What We Think
+          .col.span-2
+            .sub-head.top-line Occasionally, we’re motivated to write at length. When we do, we post it on Medium.
 
-                        h2
-                            | We help brands be
-                            br
-                            | their better selves.
-                        p See how we’re helping Intuit share the love.
-                            a.cta(href="/portfolio")
+    section#who-we-toil-for.light-bg(data-id="section-6")
+      .container
+        .row.col-3
+          .col
+            h3.top-line Who We Toil For
+          .col.span-2
+            .sub-head.top-line Our clients run the gamut&mdash;from lean start-ups to Fortune 500 heavyweights.
 
-            .light-bg
-                .container.row.col-3
-                    .col
-                        h4.top-line-gray You could say we’re just another branding firm.
-                        p.large.
-                            And you wouldn’t, technically, be wrong. We do work with
-                            brands to create stories, experiences, and products that
-                            are designed to make consumers in a noisy world sit up and take notice.
+    section#our-studio.medium-bg(data-id="section-7")
+      .container
+        .row.col-3
+          .col
+            h3.top-line Our Studio
+          .col.span-2
+            .sub-head.top-line It could be the espresso, but clients tend to spend a lot of time here.
 
-                    .col
-                        h4.top-line-gray But that would only be half of the story.
-                        p.large.
-                            Because for us, branding isn’t just what you see from the outside.
-                            It starts from what’s true on the inside. It’s everything your business
-                            stands for&mdash;what you make, why you make it, and how.
-
-                    .col
-                        h4.top-line-gray See, we’re kind of like brand therapists.
-                        p.large.
-                            We help our clients look honestly at themselves (the good and the bad),
-                            discover what makes them great, and then share that with the world in
-                            a truthful way. Consumers certainly appreciate that.
-
-        section#how-were-different.dark-bg(data-id="section-1")
-            .container.row.col-3
-                .col
-                    h3.top-line How We're Different
-                .col.span-2
-                    .sub-head.top-line The not so secret secret to our secret sauce is our inability to leave well enough alone.
-                    .owl-carousel
-                        .item
-
-        section.light-bg(data-id="what-we-do")
-        section.dark-bg(data-id="how-we-do-it")
-        section.light-bg(data-id="who-we-are")
+    section#how-to-reach-us.dark-bg(data-id="section-8")
+      .container
+        .row.col-3
+          .col
+            h3.top-line We Are Sequitur
+          .col.span-2
+            .sub-head.top-line And we'd love to get to know you better.
 
 block scripts
-    script(src="/js/hash-poll.js")
-    script(src="/js/owl.carousel.min.js")
-    script(src="/js/home.js")
+  script(src="/js/hash-poll.js")
+  script(src="/js/owl.carousel.min.js")
+  script(src="/js/home.js")

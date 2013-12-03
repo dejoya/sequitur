@@ -9,7 +9,7 @@
   background-color: #fff;
   height: $headerPhoneHeight;
   box-shadow: 0 0 2px 1px rgba(0,0,0,.25);
-  @include transition(background-color .15s ease-in-out);
+  @include transition(background-color 100ms ease-in-out);
 
   h1 {
     font-weight: normal;
@@ -68,44 +68,44 @@
   left: 0;
   background: rgba(51,204,255,.95);
   //opacity: 0;
-  @include transition(top 150ms ease-out);
+  @include transition(top 100ms ease-out);
 
   li {
     position: relative;
     padding: 10px 0;
     opacity: 0;
     @include translateY(-10px);
-    @include transition(all 150ms ease-in-out 120ms);
+    @include transition(all 120ms ease-in-out 100ms);
 
     @extend .top-line-white;
 
     &:nth-child(2){
-      @include transition-delay(130ms)
+      @include transition-delay(110ms)
     }
 
     &:nth-child(3){
-      @include transition-delay(140ms)
+      @include transition-delay(120ms)
     }
 
     &:nth-child(4){
-      @include transition-delay(150ms)
+      @include transition-delay(130ms)
     }
 
     &:nth-child(5){
-      @include transition-delay(160ms)
+      @include transition-delay(140ms)
     }
 
     &:nth-child(6){
-      @include transition-delay(170ms)
+      @include transition-delay(150ms)
     }
 
     &:nth-child(7){
-      @include transition-delay(180ms)
+      @include transition-delay(160ms)
     }
 
     &:last-child {
       @extend .bottom-line;
-      @include transition-delay(190ms);
+      @include transition-delay(170ms);
     }
   }
 
@@ -115,7 +115,7 @@
     font-style: italic;
     font-size: 18px;
 
-    @include transition(color 120ms ease-in-out);
+    @include transition(color 100ms linear);
 
     &.active, &:hover {
       color: $defaultFontColor;

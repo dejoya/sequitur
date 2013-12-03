@@ -1,0 +1,65 @@
+.owl-controls {
+
+  .owl-pagination {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+
+    .owl-page {
+
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      padding: 7.5px;
+      font-size: 0;
+
+      span {
+        @extend .circle;
+        width: 15px;
+        height: 15px;
+        display: block;
+        background-color: $white;
+        @include transition(background-color 400ms ease-in-out);
+        box-shadow: 0 0 2px rgba(0,0,0,.5);
+      }
+
+      &.active {
+        span {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+
+  .owl-buttons {
+    width: 50%;
+
+    div {
+      @extend .cta;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background-color: transparent;
+      border: 2px solid $white;
+      float: left;
+      margin: 0;
+      @include transition(opacity 200ms ease-out);
+
+      &.owl-next {
+        float: right;
+      }
+
+      &.owl-prev {
+        background-image: url(/images/arrow-back.png);
+        background-position: 45% 50%;
+      }
+
+      &.disabled {
+        opacity: .5;
+        cursor: default;
+      }
+    }
+
+  }
+}

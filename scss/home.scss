@@ -1,3 +1,5 @@
+.sub-head
+
 #hero {
 
   .item {
@@ -10,8 +12,8 @@
 
 
     p {
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
       margin-top: 10px;
       color: $darkGray;
 
@@ -20,37 +22,27 @@
       }
     }
   }
+}
 
-  .owl-pagination {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 100%;
+#how-were-different {
 
-    .owl-page {
+  .item {
 
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      padding: 7.5px;
-      font-size: 0;
+    margin-bottom: 80px;
 
-      span {
-        @extend .circle;
-        width: 15px;
-        height: 15px;
-        display: block;
-        background-color: #fff;
-        @include transition(background-color 400ms ease-in-out);
-        box-shadow: 0 0 2px rgba(0,0,0,.5);
-      }
+    .number {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
 
-      &.active {
-        span {
-          background-color: $blue;
-        }
-      }
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $offWhite;
     }
 
   }
+
 }

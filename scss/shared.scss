@@ -31,7 +31,7 @@
 .top-line-white {
   @extend .top-line;
   &:before {
-    background: #fff;
+    background: $white;
   }
 }
 
@@ -45,7 +45,7 @@
 .bottom-line {
   &:after {
     @extend .border-line;
-    background: #fff;
+    background: $white;
     top: auto;
     bottom: 0;
   }
@@ -57,13 +57,18 @@
   width: 30px;
   height: 30px;
   line-height: 30px;
-  background: $blue url(/images/arrow-cta.png) 50% 50% no-repeat;
+  background: $blue url(/images/arrow-forward.png) 55% 50% no-repeat;
   background-size: 11px 18px;
   margin-left: 15px;
 }
 
 .light-bg {
-  background-color: #fff;
+  background-color: $offWhite;
+}
+
+.medium-bg {
+  background-color: $lightGray;
+  color: #fff;
 }
 
 .dark-bg {
@@ -78,6 +83,7 @@
 
 .sub-head {
   font-size: 18px;
+  margin-bottom: 10rem;
 }
 
 .row {
@@ -86,7 +92,6 @@
   .col {
     margin: 40px 0;
   }
-
 }
 
 @media #{$mqTabletWidth}{
