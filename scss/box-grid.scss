@@ -1,0 +1,71 @@
+$row-height: 205px;
+
+.box-grid {
+
+  .row {
+    .col {
+      margin: 20px 0 0;
+
+      .box {
+        position: relative;
+      }
+
+    }
+  }
+
+  .name {
+    position: absolute;
+    color: $defaultFontColor;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .showcase {
+    width: 100%;
+    position: relative;
+
+    .name {
+      top: 4.5rem;
+      background-color: rgba(51,204,255,.9);
+      padding: 1.75rem 12rem 1.75rem 2rem;
+    }
+  }
+
+}
+
+
+@media #{$mqTabletWidth}{
+
+  .box-grid {
+
+    .row {
+      margin: 2% 0;
+
+      .col {
+
+        margin: 0 0 0 2%;
+        padding: 0;
+
+        &:first-child {
+          margin-left: 0;
+
+
+        }
+      }
+
+      &.col-3 {
+        .col {
+          width: 32%;
+        }
+      }
+
+      &.col-4 {
+        .col {
+          width: 23.5%;
+        }
+      }
+    }
+
+  }
+
+}

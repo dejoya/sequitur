@@ -5,31 +5,37 @@
 **/
 @font-face {
   font-family: "Colfax Light";
-  src: local("Chrono-Light");
+  src: url('/fonts/ColfaxWebLight.eot');
+  src:
+      url('/fonts/ColfaxWebLight.eot?iefix') format('eot'),
+      url('/fonts/ColfaxWebLight.woff') format('woff');
 }
 
-@font-face {
-  font-family: "Colfax Light";
-  src: local("Chrono-LightItalic");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Colfax Light";
-  src: local("Chrono-Book");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Colfax Light";
-  src: local("Chrono-BookItalic");
-  font-weight: bold;
-  font-style: italic;
-}
+//@font-face {
+//  font-family: "Colfax Light";
+//  src: local("Chrono-LightItalic");
+//  font-style: italic;
+//}
+//
+//@font-face {
+//  font-family: "Colfax Light";
+//  src: local("Chrono-Book");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  font-family: "Colfax Light";
+//  src: local("Chrono-BookItalic");
+//  font-weight: bold;
+//  font-style: italic;
+//}
 
 @font-face {
   font-family: "Colfax Regular";
-  src: local("Chrono-Regular");
+  src: url('/fonts/ColfaxWebRegular.eot');
+  src:
+    url('/fonts/ColfaxWebRegular.eot?iefix') format('eot'),
+    url('/fonts/ColfaxWebRegular.woff') format('woff');
 }
 
 /**

@@ -67,6 +67,7 @@ p {
 
 img {
   border: none;
+  max-width: 100%;
 }
 
 a, a:hover {
@@ -76,6 +77,7 @@ a, a:hover {
 @import "shared.scss";
 @import "owl-override.scss";
 @import "main-nav.scss";
+@import "box-grid.scss";
 @import "home.scss";
 
 

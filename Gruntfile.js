@@ -27,7 +27,7 @@ module.exports = function (grunt) {
         files: [
           'views/{,*/}*.jade',
           'public/css/{,*/}*.css',
-          'public/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          //'public/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           'public/js/{,*/}*.js'
         ]
       }

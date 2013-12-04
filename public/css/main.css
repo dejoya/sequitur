@@ -77,31 +77,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 **/
 @font-face {
   font-family: "Colfax Light";
-  src: local("Chrono-Light");
-}
-
-@font-face {
-  font-family: "Colfax Light";
-  src: local("Chrono-LightItalic");
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Colfax Light";
-  src: local("Chrono-Book");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Colfax Light";
-  src: local("Chrono-BookItalic");
-  font-weight: bold;
-  font-style: italic;
+  src: url("/fonts/ColfaxWebLight.eot");
+  src: url("/fonts/ColfaxWebLight.eot?iefix") format("eot"), url("/fonts/ColfaxWebLight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Colfax Regular";
-  src: local("Chrono-Regular");
+  src: url("/fonts/ColfaxWebRegular.eot");
+  src: url("/fonts/ColfaxWebRegular.eot?iefix") format("eot"), url("/fonts/ColfaxWebRegular.woff") format("woff");
 }
 
 /**
@@ -186,9 +169,10 @@ p.xlarge {
 /* line 68, ../../scss/main.scss */
 img {
   border: none;
+  max-width: 100%;
 }
 
-/* line 72, ../../scss/main.scss */
+/* line 73, ../../scss/main.scss */
 a, a:hover {
   text-decoration: none;
 }
@@ -278,7 +262,7 @@ a, a:hover {
 /* line 84, ../../scss/shared.scss */
 .sub-head {
   font-size: 18px;
-  margin-bottom: 10rem;
+  padding-bottom: 6.5rem;
 }
 
 /* line 89, ../../scss/shared.scss */
@@ -310,13 +294,9 @@ a, a:hover {
   .row .col :last-child {
     margin-bottom: 0;
   }
-  /* line 118, ../../scss/shared.scss */
-  .row.col-2 .col {
-    width: 50%;
-  }
   /* line 124, ../../scss/shared.scss */
   .row.col-3 .col {
-    width: 33%;
+    width: 33.3%;
   }
   /* line 127, ../../scss/shared.scss */
   .row.col-3 .col:last-child {
@@ -324,7 +304,7 @@ a, a:hover {
   }
   /* line 131, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
-    width: 67%;
+    width: 66.7%;
   }
   /* line 138, ../../scss/shared.scss */
   .row.col-4 .col {
@@ -373,8 +353,9 @@ a, a:hover {
 /* line 35, ../../scss/owl-override.scss */
 .owl-controls .owl-buttons {
   width: 50%;
+  padding-bottom: 40px;
 }
-/* line 38, ../../scss/owl-override.scss */
+/* line 39, ../../scss/owl-override.scss */
 .owl-controls .owl-buttons div {
   width: 40px;
   height: 40px;
@@ -388,16 +369,16 @@ a, a:hover {
   -o-transition: opacity 200ms ease-out;
   transition: opacity 200ms ease-out;
 }
-/* line 49, ../../scss/owl-override.scss */
+/* line 50, ../../scss/owl-override.scss */
 .owl-controls .owl-buttons div.owl-next {
   float: right;
 }
-/* line 53, ../../scss/owl-override.scss */
+/* line 54, ../../scss/owl-override.scss */
 .owl-controls .owl-buttons div.owl-prev {
   background-image: url(/images/arrow-back.png);
   background-position: 45% 50%;
 }
-/* line 58, ../../scss/owl-override.scss */
+/* line 59, ../../scss/owl-override.scss */
 .owl-controls .owl-buttons div.disabled {
   opacity: .5;
   cursor: default;
@@ -598,8 +579,57 @@ a, a:hover {
     font-size: 36px;
   }
 }
-/* line 5, ../../scss/home.scss */
-.sub-head
+/* line 6, ../../scss/box-grid.scss */
+.box-grid .row .col {
+  margin: 20px 0 0;
+}
+/* line 9, ../../scss/box-grid.scss */
+.box-grid .row .col .box {
+  position: relative;
+}
+/* line 16, ../../scss/box-grid.scss */
+.box-grid .name {
+  position: absolute;
+  color: #59595c;
+  font-size: 2rem;
+  padding: 2rem;
+}
+/* line 23, ../../scss/box-grid.scss */
+.box-grid .showcase {
+  width: 100%;
+  position: relative;
+}
+/* line 27, ../../scss/box-grid.scss */
+.box-grid .showcase .name {
+  top: 4.5rem;
+  background-color: rgba(51, 204, 255, 0.9);
+  padding: 1.75rem 12rem 1.75rem 2rem;
+}
+
+@media only screen and (min-width: 570px) {
+  /* line 41, ../../scss/box-grid.scss */
+  .box-grid .row {
+    margin: 2% 0;
+  }
+  /* line 44, ../../scss/box-grid.scss */
+  .box-grid .row .col {
+    margin: 0 0 0 2%;
+    padding: 0;
+  }
+  /* line 49, ../../scss/box-grid.scss */
+  .box-grid .row .col:first-child {
+    margin-left: 0;
+  }
+  /* line 57, ../../scss/box-grid.scss */
+  .box-grid .row.col-3 .col {
+    width: 32%;
+  }
+  /* line 63, ../../scss/box-grid.scss */
+  .box-grid .row.col-4 .col {
+    width: 23.5%;
+  }
+}
+/* line 3, ../../scss/home.scss */
 #hero .item {
   background-size: cover;
   background-position: 50% 50%;
@@ -608,58 +638,54 @@ a, a:hover {
   width: 100%;
   background-color: #585858;
 }
-/* line 14, ../../scss/home.scss */
-.sub-head
+/* line 12, ../../scss/home.scss */
 #hero .item p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-top: 10px;
   color: #231f20;
 }
-/* line 20, ../../scss/home.scss */
-.sub-head
-#hero .item p .cta, .sub-head
-#hero .item p .owl-controls .owl-buttons div, .owl-controls .owl-buttons .sub-head
-#hero .item p div {
+/* line 18, ../../scss/home.scss */
+#hero .item p .cta, #hero .item p .owl-controls .owl-buttons div, .owl-controls .owl-buttons #hero .item p div {
   margin-bottom: -8px;
 }
 
-/* line 29, ../../scss/home.scss */
+/* line 27, ../../scss/home.scss */
 #how-were-different .item {
   margin-bottom: 80px;
 }
-/* line 33, ../../scss/home.scss */
+/* line 31, ../../scss/home.scss */
 #how-were-different .item .number {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-/* line 38, ../../scss/home.scss */
+/* line 36, ../../scss/home.scss */
 #how-were-different .item h2 {
   margin-bottom: 40px;
 }
-/* line 42, ../../scss/home.scss */
+/* line 40, ../../scss/home.scss */
 #how-were-different .item p {
   color: #f1f1f1;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 83, ../../scss/main.scss */
+  /* line 85, ../../scss/main.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 87, ../../scss/main.scss */
+  /* line 89, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 91, ../../scss/main.scss */
+  /* line 93, ../../scss/main.scss */
   h2 {
     font-size: 60px;
     line-height: 58px;
   }
 
-  /* line 96, ../../scss/main.scss */
+  /* line 98, ../../scss/main.scss */
   h3 {
     font-size: 30px;
   }
