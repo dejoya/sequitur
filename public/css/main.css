@@ -87,21 +87,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url("/fonts/ColfaxWebRegular.eot?iefix") format("eot"), url("/fonts/ColfaxWebRegular.woff") format("woff");
 }
 
-/**
- * Sentinel font
- * TODO: Change to actual Sentinel webfont
-**/
-@font-face {
-  font-family: "Sentinel";
-  src: local("Sentinel-Black");
-}
-
-@font-face {
-  font-family: "Sentinel";
-  src: local("Sentinel-BlackItalic");
-  font-style: italic;
-}
-
 /* line 15, ../../scss/main.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -130,8 +115,8 @@ h1 {
 
 /* line 35, ../../scss/main.scss */
 h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: "Sentinel", Georgia, serif;
+  font-weight: 700;
+  font-family: "Sentinel SSm A", Georgia, serif;
   font-style: italic;
   color: #33ccff;
 }
@@ -524,7 +509,7 @@ a, a:hover {
 /* line 112, ../../scss/main-nav.scss */
 #main-nav a {
   color: #fff;
-  font-family: "Sentinel", Georgia, serif;
+  font-family: "Sentinel SSm A", Georgia, serif;
   font-style: italic;
   font-size: 18px;
   -webkit-transition: color 100ms linear;
@@ -607,24 +592,24 @@ a, a:hover {
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 41, ../../scss/box-grid.scss */
+  /* line 40, ../../scss/box-grid.scss */
   .box-grid .row {
     margin: 2% 0;
   }
-  /* line 44, ../../scss/box-grid.scss */
+  /* line 43, ../../scss/box-grid.scss */
   .box-grid .row .col {
     margin: 0 0 0 2%;
     padding: 0;
   }
-  /* line 49, ../../scss/box-grid.scss */
+  /* line 48, ../../scss/box-grid.scss */
   .box-grid .row .col:first-child {
     margin-left: 0;
   }
-  /* line 57, ../../scss/box-grid.scss */
+  /* line 55, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col {
     width: 32%;
   }
-  /* line 63, ../../scss/box-grid.scss */
+  /* line 61, ../../scss/box-grid.scss */
   .box-grid .row.col-4 .col {
     width: 23.5%;
   }

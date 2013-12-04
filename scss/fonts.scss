@@ -37,18 +37,3 @@
     url('/fonts/ColfaxWebRegular.eot?iefix') format('eot'),
     url('/fonts/ColfaxWebRegular.woff') format('woff');
 }
-
-/**
- * Sentinel font
- * TODO: Change to actual Sentinel webfont
-**/
-@font-face {
-  font-family: "Sentinel";
-  src: local("Sentinel-Black");
-}
-
-@font-face {
-  font-family: "Sentinel";
-  src: local("Sentinel-BlackItalic");
-  font-style: italic;
-}
