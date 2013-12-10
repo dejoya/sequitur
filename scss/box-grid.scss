@@ -1,11 +1,9 @@
-$row-height: 205px;
-
 .box-grid {
 
   .row {
     .col {
       margin: 20px 0 0;
-
+      position: relative;
       .box {
         position: relative;
       }
@@ -54,6 +52,10 @@ $row-height: 205px;
       &.col-3 {
         .col {
           width: 32%;
+
+          &.span-2 {
+            width: 66%;
+          }
         }
       }
 
