@@ -37,11 +37,11 @@ h2, h3, h4, h5, h6 {
   font-family: $sentinelStack;
   font-style: italic;
   color: $blue;
+  line-height: 1.3em;
 }
 
 h2 {
   font-size: 30px;
-  line-height: 29px;
 }
 
 h3 {
@@ -54,6 +54,7 @@ h4 {
 
 p {
   font-size: 1.2rem;
+  line-height: 1.3em;
   margin: 1em 0;
 
   &.large {
@@ -92,7 +93,7 @@ a, a:hover {
 
   h2 {
     font-size: 60px;
-    line-height: 58px;
+
   }
 
   h3 {

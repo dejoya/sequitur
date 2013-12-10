@@ -41,6 +41,11 @@
             rewindNav: false
         });
 
+        $('#what-we-do .view-all').on('click', function(){
+            $('#what-we-do .box-grid .hidden').removeClass('hidden');
+            $(this).addClass('hidden');
+        });
+
     });
 
 }(jQuery));
