@@ -144,21 +144,25 @@ p {
   margin: 1em 0;
 }
 /* line 60, ../../scss/main.scss */
+p.small {
+  font-size: 1rem;
+}
+/* line 64, ../../scss/main.scss */
 p.large {
   font-size: 1.3rem;
 }
-/* line 64, ../../scss/main.scss */
+/* line 68, ../../scss/main.scss */
 p.xlarge {
   font-size: 1.5rem;
 }
 
-/* line 69, ../../scss/main.scss */
+/* line 73, ../../scss/main.scss */
 img {
   border: none;
   max-width: 100%;
 }
 
-/* line 74, ../../scss/main.scss */
+/* line 78, ../../scss/main.scss */
 a, a:hover {
   text-decoration: none;
 }
@@ -671,24 +675,39 @@ a, a:hover {
   cursor: pointer;
 }
 
+/* line 62, ../../scss/home.scss */
+#how-we-do-it {
+  padding-bottom: 60px;
+}
+/* line 65, ../../scss/home.scss */
+#how-we-do-it .number {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
 @media only screen and (min-width: 570px) {
-  /* line 86, ../../scss/main.scss */
+  /* line 90, ../../scss/main.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 90, ../../scss/main.scss */
+  /* line 94, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 94, ../../scss/main.scss */
+  /* line 98, ../../scss/main.scss */
   h2 {
     font-size: 60px;
   }
 
-  /* line 99, ../../scss/main.scss */
+  /* line 103, ../../scss/main.scss */
   h3 {
     font-size: 30px;
+  }
+
+  /* line 107, ../../scss/main.scss */
+  h4 {
+    font-size: 24px;
   }
 }
