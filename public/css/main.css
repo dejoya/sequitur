@@ -145,7 +145,7 @@ p {
 }
 /* line 60, ../../scss/main.scss */
 p.small {
-  font-size: 1rem;
+  font-size: 12px;
 }
 /* line 64, ../../scss/main.scss */
 p.large {
@@ -245,7 +245,7 @@ a, a:hover {
 /* line 78, ../../scss/shared.scss */
 .dark-bg {
   background-color: #1f1f1f;
-  color: #fff;
+  color: #ccc;
 }
 
 /* line 83, ../../scss/shared.scss */
@@ -649,12 +649,8 @@ a, a:hover {
 #how-were-different .item h2 {
   margin-bottom: 40px;
 }
-/* line 40, ../../scss/home.scss */
-#how-were-different .item p {
-  color: #f1f1f1;
-}
 
-/* line 50, ../../scss/home.scss */
+/* line 47, ../../scss/home.scss */
 #what-we-do .view-all {
   float: right;
   font-size: 24px;
@@ -665,11 +661,11 @@ a, a:hover {
   cursor: pointer;
 }
 
-/* line 62, ../../scss/home.scss */
+/* line 59, ../../scss/home.scss */
 #how-we-do-it {
   padding-bottom: 60px;
 }
-/* line 65, ../../scss/home.scss */
+/* line 62, ../../scss/home.scss */
 #how-we-do-it .number {
   margin-top: 30px;
   font-size: 24px;
