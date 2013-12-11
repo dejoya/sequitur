@@ -116,7 +116,7 @@ h1 {
 /* line 35, ../../scss/main.scss */
 h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: "Sentinel SSm A", Georgia, serif;
+  font-family: "Sentinel", Georgia, serif;
   font-style: italic;
   color: #33ccff;
   line-height: 1.3em;
@@ -269,33 +269,37 @@ a, a:hover {
 .row .col {
   margin: 40px 0;
 }
+/* line 99, ../../scss/shared.scss */
+.row .col h4, .row .col p {
+  padding-right: 20px;
+}
 
 @media only screen and (min-width: 570px) {
-  /* line 102, ../../scss/shared.scss */
+  /* line 106, ../../scss/shared.scss */
   .sub-head {
     font-size: 24px;
     line-height: 1.3em;
   }
 
-  /* line 109, ../../scss/shared.scss */
+  /* line 113, ../../scss/shared.scss */
   .row .col {
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 114, ../../scss/shared.scss */
+  /* line 118, ../../scss/shared.scss */
   .row .col:first-child {
     margin-left: 0;
   }
-  /* line 121, ../../scss/shared.scss */
+  /* line 125, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 124, ../../scss/shared.scss */
+  /* line 128, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 131, ../../scss/shared.scss */
+  /* line 135, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
   }
@@ -505,7 +509,7 @@ a, a:hover {
 /* line 112, ../../scss/main-nav.scss */
 #main-nav a {
   color: #fff;
-  font-family: "Sentinel SSm A", Georgia, serif;
+  font-family: "Sentinel", Georgia, serif;
   font-style: italic;
   font-size: 18px;
   -webkit-transition: color 100ms linear;
@@ -669,6 +673,20 @@ a, a:hover {
 #how-we-do-it .number {
   margin-top: 30px;
   font-size: 24px;
+}
+
+/* line 70, ../../scss/home.scss */
+#who-we-are .col img {
+  height: 220px;
+}
+/* line 74, ../../scss/home.scss */
+#who-we-are .col h4 {
+  margin-top: 1rem;
+}
+/* line 78, ../../scss/home.scss */
+#who-we-are .col .role {
+  font-size: 1.3rem;
+  margin: 0 0 2rem;
 }
 
 @media only screen and (min-width: 570px) {
