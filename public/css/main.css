@@ -259,47 +259,52 @@ a, a:hover {
   font-size: 18px;
   padding-bottom: 6.5rem;
 }
+/* line 92, ../../scss/shared.scss */
+.sub-head a {
+  text-decoration: underline;
+  color: inherit;
+}
 
-/* line 93, ../../scss/shared.scss */
+/* line 98, ../../scss/shared.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 96, ../../scss/shared.scss */
+/* line 101, ../../scss/shared.scss */
 .row .col {
   margin: 40px 0;
 }
-/* line 99, ../../scss/shared.scss */
+/* line 104, ../../scss/shared.scss */
 .row .col h4, .row .col p {
   padding-right: 20px;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 106, ../../scss/shared.scss */
+  /* line 111, ../../scss/shared.scss */
   .sub-head {
     font-size: 24px;
     line-height: 1.3em;
   }
 
-  /* line 113, ../../scss/shared.scss */
+  /* line 118, ../../scss/shared.scss */
   .row .col {
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 118, ../../scss/shared.scss */
+  /* line 123, ../../scss/shared.scss */
   .row .col:first-child {
     margin-left: 0;
   }
-  /* line 125, ../../scss/shared.scss */
+  /* line 130, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 128, ../../scss/shared.scss */
+  /* line 133, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 135, ../../scss/shared.scss */
+  /* line 140, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
   }
@@ -705,6 +710,16 @@ a, a:hover {
   display: block;
   background: url(/images/icon-plus.png) 0 0 no-repeat;
   background-size: cover;
+}
+
+/* line 103, ../../scss/home.scss */
+#who-we-toil-for .client-logos {
+  margin-bottom: 80px;
+}
+/* line 105, ../../scss/home.scss */
+#who-we-toil-for .client-logos img {
+  width: 100%;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 570px) {
