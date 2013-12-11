@@ -689,6 +689,24 @@ a, a:hover {
   margin: 0 0 2rem;
 }
 
+/* line 85, ../../scss/home.scss */
+#what-we-think {
+  padding-bottom: 2rem;
+}
+/* line 88, ../../scss/home.scss */
+#what-we-think .by-line {
+  margin: 25px 0 20px;
+}
+/* line 92, ../../scss/home.scss */
+#what-we-think .plus {
+  text-indent: -9999px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url(/images/icon-plus.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 570px) {
   /* line 90, ../../scss/main.scss */
   html {

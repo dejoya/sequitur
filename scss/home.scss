@@ -81,3 +81,20 @@
     }
   }
 }
+
+#what-we-think {
+  padding-bottom: 2rem;
+
+  .by-line {
+    margin: 25px 0 20px;
+  }
+
+  .plus {
+    text-indent: -9999px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(/images/icon-plus.png) 0 0 no-repeat;
+    background-size: cover;
+  }
+}
