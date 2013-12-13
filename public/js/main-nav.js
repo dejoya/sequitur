@@ -22,6 +22,19 @@
             $nav = $('#main-nav');
             $header = $('#site-header');
 
+            var headroom = new Headroom($header.get(0),
+              {
+                "tolerance": 5,
+                "offset": 50,
+                "classes": {
+                "initial": "animated",
+                  "pinned": "slide-down",
+                  "unpinned": "slide-up"
+                }
+            });
+
+            headroom.init();
+
             $header.on(eventName, '.main-nav-toggle', function () {
                 if (isOpen) {
                     close();
