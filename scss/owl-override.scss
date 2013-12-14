@@ -45,7 +45,12 @@
       border: 2px solid $white;
       float: left;
       margin: 0;
-      @include transition(opacity 200ms ease-out);
+      @include transition(all 200ms ease-in-out);
+
+
+      &:hover:not(.disabled) {
+        @include transform(scale3d(1.05, 1.05, 1));
+      }
 
       &.owl-next {
         float: right;

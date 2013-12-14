@@ -30,19 +30,20 @@
   &:before {
     @extend .border-line;
   }
-}
-
-.top-line-white {
-  @extend .top-line;
-  &:before {
-    background: $white;
+  &.short {
+    &:before {
+      width: 14px;
+    }
   }
-}
-
-.top-line-gray {
-  @extend .top-line;
-  &:before {
-    background: $lightGray;
+  &.white {
+    &:before {
+      background: $white;
+    }
+  }
+  &.gray {
+    &:before {
+      background: $lightGray;
+    }
   }
 }
 

@@ -85,8 +85,6 @@
     @include translateY(-10px);
     @include transition(all 120ms ease-in-out 100ms);
 
-    @extend .top-line-white;
-
     &:nth-child(2){
       @include transition-delay(110ms)
     }
