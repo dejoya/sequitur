@@ -35,6 +35,13 @@
             }, 100);
         });
 
+    $(function(){
+      $('.view-all').on('click', function(){
+        var $this = $(this);
+        $this.parents('.box-grid').find('.hidden').removeClass('hidden');
+        $this.addClass('hidden');
+      });
+    });
 
     window.App = App;
 

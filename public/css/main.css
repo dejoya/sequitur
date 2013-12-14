@@ -269,45 +269,60 @@ a, .blue {
 }
 
 /* line 99, ../../scss/shared.scss */
+.view-all {
+  float: right;
+  font-size: 24px;
+  padding-right: 35px;
+  margin: 35px 15px 45px;
+  background: url(/images/icon-plus.png) right 50% no-repeat;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+
+/* line 109, ../../scss/shared.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 102, ../../scss/shared.scss */
+/* line 112, ../../scss/shared.scss */
 .row .col {
   margin: 40px 0;
 }
-/* line 105, ../../scss/shared.scss */
+/* line 115, ../../scss/shared.scss */
 .row .col h4, .row .col p {
   padding-right: 20px;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 112, ../../scss/shared.scss */
+  /* line 122, ../../scss/shared.scss */
   .sub-head {
     font-size: 24px;
     line-height: 1.3em;
   }
 
-  /* line 119, ../../scss/shared.scss */
+  /* line 129, ../../scss/shared.scss */
   .row .col {
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 124, ../../scss/shared.scss */
+  /* line 134, ../../scss/shared.scss */
   .row .col:first-child {
     margin-left: 0;
   }
-  /* line 131, ../../scss/shared.scss */
+  /* line 141, ../../scss/shared.scss */
+  .row.col-2 .col {
+    width: 49%;
+  }
+  /* line 147, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 134, ../../scss/shared.scss */
+  /* line 150, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 141, ../../scss/shared.scss */
+  /* line 157, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
   }
@@ -694,50 +709,39 @@ a, .blue {
   margin-bottom: 40px;
 }
 
-/* line 47, ../../scss/home.scss */
-#what-we-do .view-all {
-  float: right;
-  font-size: 24px;
-  padding-right: 35px;
-  margin: 35px 15px 45px;
-  background: url(/images/icon-plus.png) right 50% no-repeat;
-  background-size: 20px 20px;
-  cursor: pointer;
-}
-
-/* line 59, ../../scss/home.scss */
+/* line 45, ../../scss/home.scss */
 #how-we-do-it {
   padding-bottom: 60px;
 }
-/* line 62, ../../scss/home.scss */
+/* line 48, ../../scss/home.scss */
 #how-we-do-it .number {
   margin-top: 30px;
   font-size: 24px;
 }
 
-/* line 70, ../../scss/home.scss */
+/* line 56, ../../scss/home.scss */
 #who-we-are .col img {
   height: 220px;
 }
-/* line 74, ../../scss/home.scss */
+/* line 60, ../../scss/home.scss */
 #who-we-are .col h4 {
   margin-top: 1rem;
 }
-/* line 78, ../../scss/home.scss */
+/* line 64, ../../scss/home.scss */
 #who-we-are .col .role {
   font-size: 1.3rem;
   margin: 0 0 2rem;
 }
 
-/* line 85, ../../scss/home.scss */
+/* line 71, ../../scss/home.scss */
 #what-we-think {
   padding-bottom: 2rem;
 }
-/* line 88, ../../scss/home.scss */
+/* line 74, ../../scss/home.scss */
 #what-we-think .by-line {
   margin: 25px 0 20px;
 }
-/* line 92, ../../scss/home.scss */
+/* line 78, ../../scss/home.scss */
 #what-we-think .plus {
   text-indent: -9999px;
   width: 20px;
@@ -747,43 +751,57 @@ a, .blue {
   background-size: cover;
 }
 
-/* line 103, ../../scss/home.scss */
+/* line 89, ../../scss/home.scss */
 #who-we-toil-for .client-logos {
   margin-bottom: 80px;
 }
-/* line 105, ../../scss/home.scss */
+/* line 91, ../../scss/home.scss */
 #who-we-toil-for .client-logos img {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 113, ../../scss/home.scss */
+/* line 99, ../../scss/home.scss */
 #how-to-reach-us p {
   font-size: 21px;
 }
 
+/* line 1, ../../scss/project.scss */
+.project-page {
+  padding: 3rem 0 4rem;
+}
+/* line 4, ../../scss/project.scss */
+.project-page .gallery {
+  margin: 5rem 0;
+}
+/* line 7, ../../scss/project.scss */
+.project-page .gallery img {
+  margin: 0 0 20px;
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 570px) {
-  /* line 91, ../../scss/main.scss */
+  /* line 92, ../../scss/main.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 95, ../../scss/main.scss */
+  /* line 96, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 99, ../../scss/main.scss */
+  /* line 100, ../../scss/main.scss */
   h2 {
     font-size: 60px;
   }
 
-  /* line 104, ../../scss/main.scss */
+  /* line 105, ../../scss/main.scss */
   h3 {
     font-size: 30px;
   }
 
-  /* line 108, ../../scss/main.scss */
+  /* line 109, ../../scss/main.scss */
   h4 {
     font-size: 24px;
   }
