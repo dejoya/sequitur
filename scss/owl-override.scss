@@ -45,7 +45,7 @@
       border: 2px solid $white;
       float: left;
       margin: 0;
-      @include transition(all 200ms ease-in-out);
+      @include transition(all 150ms ease-in-out);
 
 
       &:hover:not(.disabled) {

@@ -17,17 +17,14 @@ html(class='no-js', lang='en')
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         // Place favicon.ico and apple-touch-icon.png in the root directory
 
-        if (env == 'dev')
-            //link(rel='stylesheet', href='/css/bootstrap.min.css')
-        else
-            link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
-
         link(rel="stylesheet", href="//cloud.typography.com/7019072/621522/css/fonts.css")
+        link(rel="stylesheet", href="/css/video-js.min.css")
         link(rel='stylesheet', href='/css/main.css')
 
         block styles
 
         script(src="/js/modernizr.custom.js")
+        script(src="/js/video.js")
         //[if lt IE 9]
             script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
             script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")

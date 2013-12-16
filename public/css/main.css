@@ -372,10 +372,10 @@ a, .blue {
   border: 2px solid white;
   float: left;
   margin: 0;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 /* line 51, ../../scss/owl-override.scss */
 .owl-controls .owl-buttons div:hover:not(.disabled) {
@@ -762,6 +762,17 @@ a, .blue {
 }
 
 /* line 99, ../../scss/home.scss */
+#our-studio .video-holder {
+  margin-bottom: 4rem;
+}
+/* line 102, ../../scss/home.scss */
+#our-studio .video-holder .vjs-big-play-button {
+  top: 50%;
+  left: 50%;
+  margin: -1.3em 0 0 -2em;
+}
+
+/* line 111, ../../scss/home.scss */
 #how-to-reach-us p {
   font-size: 21px;
 }

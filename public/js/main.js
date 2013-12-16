@@ -43,6 +43,12 @@
       });
     });
 
+
+    // config videojs
+    videojs.options.flash.swf = "/flash/video-js.swf";
+
+
+
     window.App = App;
 
 }(jQuery));
