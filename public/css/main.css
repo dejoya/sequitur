@@ -411,10 +411,10 @@ a, .blue {
   background-color: #fff;
   height: 50px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25);
-  -webkit-transition: background-color 100ms ease-in-out, -webkit-transform 400ms ease-in-out;
-  -moz-transition: background-color 100ms ease-in-out, -moz-transform 400ms ease-in-out;
-  -o-transition: background-color 100ms ease-in-out, -o-transform 400ms ease-in-out;
-  transition: background-color 100ms ease-in-out, transform 400ms ease-in-out;
+  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out, -moz-transform 400ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out, -o-transform 400ms ease-in-out;
+  transition: background-color 200ms ease-in-out, transform 400ms ease-in-out;
 }
 /* line 14, ../../scss/main-nav.scss */
 #site-header.slide-down {
@@ -483,10 +483,10 @@ a, .blue {
   top: -100%;
   left: 0;
   background: rgba(51, 204, 255, 0.95);
-  -webkit-transition: top 100ms ease-out;
-  -moz-transition: top 100ms ease-out;
-  -o-transition: top 100ms ease-out;
-  transition: top 100ms ease-out;
+  -webkit-transition: top 200ms ease-out;
+  -moz-transition: top 200ms ease-out;
+  -o-transition: top 200ms ease-out;
+  transition: top 200ms ease-out;
 }
 /* line 81, ../../scss/main-nav.scss */
 #main-nav li {
@@ -559,21 +559,22 @@ a, .blue {
   font-family: "Sentinel", Georgia, serif;
   font-style: italic;
   font-size: 18px;
+  font-weight: bold;
   -webkit-transition: color 100ms linear;
   -moz-transition: color 100ms linear;
   -o-transition: color 100ms linear;
   transition: color 100ms linear;
 }
-/* line 126, ../../scss/main-nav.scss */
+/* line 127, ../../scss/main-nav.scss */
 #main-nav a.active, #main-nav a:hover {
   color: #59595c;
 }
-/* line 131, ../../scss/main-nav.scss */
+/* line 132, ../../scss/main-nav.scss */
 #main-nav.open {
   top: 0;
   opacity: 1;
 }
-/* line 135, ../../scss/main-nav.scss */
+/* line 136, ../../scss/main-nav.scss */
 #main-nav.open li {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -584,20 +585,20 @@ a, .blue {
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 143, ../../scss/main-nav.scss */
+  /* line 144, ../../scss/main-nav.scss */
   #site-header {
     height: 100px;
   }
-  /* line 146, ../../scss/main-nav.scss */
+  /* line 147, ../../scss/main-nav.scss */
   #site-header h1 {
     margin-top: 46px;
   }
-  /* line 150, ../../scss/main-nav.scss */
+  /* line 151, ../../scss/main-nav.scss */
   #site-header .main-nav-toggle {
     margin-top: 50px;
     padding: 0;
   }
-  /* line 155, ../../scss/main-nav.scss */
+  /* line 156, ../../scss/main-nav.scss */
   #site-header.slide-up {
     -webkit-transform: translateY(-100px);
     -moz-transform: translateY(-100px);
@@ -606,15 +607,15 @@ a, .blue {
     transform: translateY(-100px);
   }
 
-  /* line 160, ../../scss/main-nav.scss */
+  /* line 161, ../../scss/main-nav.scss */
   #main-nav {
     padding-top: 100px;
   }
-  /* line 163, ../../scss/main-nav.scss */
+  /* line 164, ../../scss/main-nav.scss */
   #main-nav li {
     padding: 15px 0;
   }
-  /* line 167, ../../scss/main-nav.scss */
+  /* line 168, ../../scss/main-nav.scss */
   #main-nav a {
     font-size: 36px;
   }
