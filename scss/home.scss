@@ -8,6 +8,9 @@
     width: 100%;
     background-color: $lightGray;
 
+    h2 {
+      width: 80%;
+    }
 
     p {
       font-size: 1.5rem;
@@ -97,8 +100,10 @@
 
 #our-studio {
   .video-holder {
-    margin-bottom: 4rem;
-
+    //padding-bottom: 4rem;
+    video {
+      display: block;
+    }
     .vjs-big-play-button {
       top: 50%;
       left: 50%;
@@ -110,5 +115,15 @@
 #how-to-reach-us {
   p {
     font-size: 21px;
+  }
+}
+
+@media #{$mqDesktopWidth}{
+  #hero {
+    .item {
+      h2 {
+        width: 60%;
+      }
+    }
   }
 }

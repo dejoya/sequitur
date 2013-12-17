@@ -5,9 +5,15 @@
 
     $(function(){
 
-        var $sections = $('section');
-        var $header = $('#site-header');
-        var $body = $('body');
+        var 
+            $sections = $('section'),
+            $header = $('#site-header'),
+            $body = $('body'),
+            $window = $(window),
+            $studioVideo = $('#studio-video');
+
+        resizeVideo();
+        playVideo();
 
         $.subscribe('hash-change', function(e, hash){
 
@@ -23,6 +29,31 @@
                 })
             }
         });
+
+        $.subscribe('delayed-resize', resizeVideo);
+        $window.on('scroll', playVideo);
+
+        function playVideo(){
+            // check to see if it is in view
+            var scrollTop = $window.scrollTop();
+            var videoTop = $studioVideo.offset().top;
+            var winHeight = $window.height();
+            var videoHeight = $studioVideo.height();
+            console.log(scrollTop + winHeight >= videoTop, scrollTop <= videoTop + videoHeight)
+            if (scrollTop + winHeight >= videoTop && scrollTop <= videoTop + videoHeight){
+                $studioVideo.get(0).play();
+            }
+            else {
+                $studioVideo.get(0).pause();
+            }
+
+        }
+
+        function resizeVideo(){
+            $studioVideo.width($window.width());
+        }
+
+        // carousel setups
 
         $('#hero .owl-carousel').owlCarousel({
             slideSpeed : 300,
@@ -40,6 +71,8 @@
             navigationText: false,
             rewindNav: false
         });
+
+        
 
     });
 

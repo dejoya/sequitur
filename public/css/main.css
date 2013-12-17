@@ -145,7 +145,7 @@ p {
 }
 /* line 60, ../../scss/main.scss */
 p.small {
-  font-size: 12px;
+  font-size: 1.25rem;
 }
 /* line 64, ../../scss/main.scss */
 p.large {
@@ -684,65 +684,69 @@ a, .blue {
   width: 100%;
   background-color: #585858;
 }
-/* line 12, ../../scss/home.scss */
+/* line 11, ../../scss/home.scss */
+#hero .item h2 {
+  width: 80%;
+}
+/* line 15, ../../scss/home.scss */
 #hero .item p {
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-top: 10px;
   color: #231f20;
 }
-/* line 18, ../../scss/home.scss */
+/* line 21, ../../scss/home.scss */
 #hero .item p .cta, #hero .item p .owl-controls .owl-buttons div, .owl-controls .owl-buttons #hero .item p div {
   margin-bottom: -8px;
 }
 
-/* line 27, ../../scss/home.scss */
+/* line 30, ../../scss/home.scss */
 #how-were-different .item {
   margin-bottom: 80px;
 }
-/* line 31, ../../scss/home.scss */
+/* line 34, ../../scss/home.scss */
 #how-were-different .item .number {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-/* line 36, ../../scss/home.scss */
+/* line 39, ../../scss/home.scss */
 #how-were-different .item h2 {
   margin-bottom: 40px;
 }
 
-/* line 45, ../../scss/home.scss */
+/* line 48, ../../scss/home.scss */
 #how-we-do-it {
   padding-bottom: 60px;
 }
-/* line 48, ../../scss/home.scss */
+/* line 51, ../../scss/home.scss */
 #how-we-do-it .number {
   margin-top: 30px;
   font-size: 24px;
 }
 
-/* line 56, ../../scss/home.scss */
+/* line 59, ../../scss/home.scss */
 #who-we-are .col img {
   height: 220px;
 }
-/* line 60, ../../scss/home.scss */
+/* line 63, ../../scss/home.scss */
 #who-we-are .col h4 {
   margin-top: 1rem;
 }
-/* line 64, ../../scss/home.scss */
+/* line 67, ../../scss/home.scss */
 #who-we-are .col .role {
   font-size: 1.3rem;
   margin: 0 0 2rem;
 }
 
-/* line 71, ../../scss/home.scss */
+/* line 74, ../../scss/home.scss */
 #what-we-think {
   padding-bottom: 2rem;
 }
-/* line 74, ../../scss/home.scss */
+/* line 77, ../../scss/home.scss */
 #what-we-think .by-line {
   margin: 25px 0 20px;
 }
-/* line 78, ../../scss/home.scss */
+/* line 81, ../../scss/home.scss */
 #what-we-think .plus {
   text-indent: -9999px;
   width: 20px;
@@ -752,32 +756,38 @@ a, .blue {
   background-size: cover;
 }
 
-/* line 89, ../../scss/home.scss */
+/* line 92, ../../scss/home.scss */
 #who-we-toil-for .client-logos {
   margin-bottom: 80px;
 }
-/* line 91, ../../scss/home.scss */
+/* line 94, ../../scss/home.scss */
 #who-we-toil-for .client-logos img {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 99, ../../scss/home.scss */
-#our-studio .video-holder {
-  margin-bottom: 4rem;
+/* line 104, ../../scss/home.scss */
+#our-studio .video-holder video {
+  display: block;
 }
-/* line 102, ../../scss/home.scss */
+/* line 107, ../../scss/home.scss */
 #our-studio .video-holder .vjs-big-play-button {
   top: 50%;
   left: 50%;
   margin: -1.3em 0 0 -2em;
 }
 
-/* line 111, ../../scss/home.scss */
+/* line 116, ../../scss/home.scss */
 #how-to-reach-us p {
   font-size: 21px;
 }
 
+@media only screen and (min-width: 769px) {
+  /* line 124, ../../scss/home.scss */
+  #hero .item h2 {
+    width: 60%;
+  }
+}
 /* line 1, ../../scss/project.scss */
 .project-page {
   padding: 3rem 0 4rem;
