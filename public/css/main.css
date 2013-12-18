@@ -273,56 +273,71 @@ a, .blue {
   float: right;
   font-size: 24px;
   padding-right: 35px;
-  margin: 35px 15px 45px;
+  margin: 35px 15px;
   background: url(/images/icon-plus.png) right 50% no-repeat;
   background-size: 20px 20px;
   cursor: pointer;
 }
 
 /* line 109, ../../scss/shared.scss */
+.slide-down {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in;
+  -moz-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+}
+/* line 115, ../../scss/shared.scss */
+.slide-down .row:first-child {
+  margin-top: 0;
+}
+
+/* line 120, ../../scss/shared.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 112, ../../scss/shared.scss */
+/* line 123, ../../scss/shared.scss */
 .row .col {
   margin: 40px 0;
 }
-/* line 115, ../../scss/shared.scss */
+/* line 126, ../../scss/shared.scss */
 .row .col h4, .row .col p {
   padding-right: 20px;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 122, ../../scss/shared.scss */
+  /* line 133, ../../scss/shared.scss */
   .sub-head {
     font-size: 24px;
     line-height: 1.3em;
   }
 
-  /* line 129, ../../scss/shared.scss */
+  /* line 140, ../../scss/shared.scss */
   .row .col {
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 134, ../../scss/shared.scss */
+  /* line 145, ../../scss/shared.scss */
   .row .col:first-child {
     margin-left: 0;
   }
-  /* line 141, ../../scss/shared.scss */
+  /* line 152, ../../scss/shared.scss */
   .row.col-2 .col {
     width: 49%;
   }
-  /* line 147, ../../scss/shared.scss */
+  /* line 158, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 150, ../../scss/shared.scss */
+  /* line 161, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 157, ../../scss/shared.scss */
+  /* line 168, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
   }
@@ -620,57 +635,90 @@ a, .blue {
     font-size: 36px;
   }
 }
-/* line 4, ../../scss/box-grid.scss */
+/* line 1, ../../scss/box-grid.scss */
+.box-grid {
+  position: relative;
+}
+/* line 6, ../../scss/box-grid.scss */
 .box-grid .row .col {
   margin: 20px 0 0;
   position: relative;
 }
-/* line 7, ../../scss/box-grid.scss */
+/* line 9, ../../scss/box-grid.scss */
 .box-grid .row .col .box {
+  display: block;
   position: relative;
+  overflow: hidden;
 }
 /* line 14, ../../scss/box-grid.scss */
+.box-grid .row .col .box img {
+  display: block;
+}
+/* line 22, ../../scss/box-grid.scss */
 .box-grid .name {
   position: absolute;
   color: #59595c;
-  font-size: 2rem;
-  padding: 2rem;
+  top: 2rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem 1.5rem 1.5rem;
+  background-color: rgba(51, 204, 255, 0.9);
 }
-/* line 21, ../../scss/box-grid.scss */
+/* line 31, ../../scss/box-grid.scss */
 .box-grid .showcase {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
-/* line 25, ../../scss/box-grid.scss */
+/* line 35, ../../scss/box-grid.scss */
 .box-grid .showcase .name {
   top: 4.5rem;
-  background-color: rgba(51, 204, 255, 0.9);
+  font-size: 2rem;
   padding: 1.75rem 12rem 1.75rem 2rem;
 }
 
+/* line 46, ../../scss/box-grid.scss */
+.no-touch .box-grid .name {
+  left: -100%;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+/* line 53, ../../scss/box-grid.scss */
+.no-touch .box-grid .showcase .name {
+  left: 0;
+  opacity: 1;
+}
+/* line 60, ../../scss/box-grid.scss */
+.no-touch .box-grid .box:hover .name {
+  left: 0;
+  opacity: 1;
+}
+
 @media only screen and (min-width: 570px) {
-  /* line 38, ../../scss/box-grid.scss */
+  /* line 72, ../../scss/box-grid.scss */
   .box-grid .row {
     margin: 2% 0;
   }
-  /* line 41, ../../scss/box-grid.scss */
+  /* line 75, ../../scss/box-grid.scss */
   .box-grid .row .col {
     margin: 0 0 0 2%;
     padding: 0;
   }
-  /* line 46, ../../scss/box-grid.scss */
+  /* line 80, ../../scss/box-grid.scss */
   .box-grid .row .col:first-child {
     margin-left: 0;
   }
-  /* line 53, ../../scss/box-grid.scss */
+  /* line 87, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col {
     width: 32%;
   }
-  /* line 56, ../../scss/box-grid.scss */
+  /* line 90, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 63, ../../scss/box-grid.scss */
+  /* line 97, ../../scss/box-grid.scss */
   .box-grid .row.col-4 .col {
     width: 23.5%;
   }
@@ -680,7 +728,7 @@ a, .blue {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  min-height: 500px;
+  min-height: 300px;
   width: 100%;
   background-color: #585858;
 }
@@ -714,39 +762,44 @@ a, .blue {
   margin-bottom: 40px;
 }
 
-/* line 48, ../../scss/home.scss */
+/* line 46, ../../scss/home.scss */
+#what-we-do {
+  padding-bottom: 3rem;
+}
+
+/* line 50, ../../scss/home.scss */
 #how-we-do-it {
   padding-bottom: 60px;
 }
-/* line 51, ../../scss/home.scss */
+/* line 53, ../../scss/home.scss */
 #how-we-do-it .number {
   margin-top: 30px;
   font-size: 24px;
 }
 
-/* line 59, ../../scss/home.scss */
+/* line 61, ../../scss/home.scss */
 #who-we-are .col img {
   height: 220px;
 }
-/* line 63, ../../scss/home.scss */
+/* line 65, ../../scss/home.scss */
 #who-we-are .col h4 {
   margin-top: 1rem;
 }
-/* line 67, ../../scss/home.scss */
+/* line 69, ../../scss/home.scss */
 #who-we-are .col .role {
   font-size: 1.3rem;
   margin: 0 0 2rem;
 }
 
-/* line 74, ../../scss/home.scss */
+/* line 76, ../../scss/home.scss */
 #what-we-think {
   padding-bottom: 2rem;
 }
-/* line 77, ../../scss/home.scss */
+/* line 79, ../../scss/home.scss */
 #what-we-think .by-line {
   margin: 25px 0 20px;
 }
-/* line 81, ../../scss/home.scss */
+/* line 83, ../../scss/home.scss */
 #what-we-think .plus {
   text-indent: -9999px;
   width: 20px;
@@ -756,34 +809,40 @@ a, .blue {
   background-size: cover;
 }
 
-/* line 92, ../../scss/home.scss */
+/* line 94, ../../scss/home.scss */
 #who-we-toil-for .client-logos {
   margin-bottom: 80px;
 }
-/* line 94, ../../scss/home.scss */
+/* line 96, ../../scss/home.scss */
 #who-we-toil-for .client-logos img {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 104, ../../scss/home.scss */
+/* line 106, ../../scss/home.scss */
 #our-studio .video-holder video {
   display: block;
 }
-/* line 107, ../../scss/home.scss */
+/* line 109, ../../scss/home.scss */
 #our-studio .video-holder .vjs-big-play-button {
   top: 50%;
   left: 50%;
   margin: -1.3em 0 0 -2em;
 }
 
-/* line 116, ../../scss/home.scss */
+/* line 118, ../../scss/home.scss */
 #how-to-reach-us p {
   font-size: 21px;
 }
 
+@media only screen and (min-width: 570px) {
+  /* line 125, ../../scss/home.scss */
+  #hero .item {
+    min-height: 500px;
+  }
+}
 @media only screen and (min-width: 769px) {
-  /* line 124, ../../scss/home.scss */
+  /* line 134, ../../scss/home.scss */
   #hero .item h2 {
     width: 60%;
   }

@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    min-height: 500px;
+    min-height: 300px;
     width: 100%;
     background-color: $lightGray;
 
@@ -39,10 +39,12 @@
     h2 {
       margin-bottom: 40px;
     }
-
-
   }
 
+}
+
+#what-we-do {
+  padding-bottom: 3rem;
 }
 
 #how-we-do-it {
@@ -115,6 +117,14 @@
 #how-to-reach-us {
   p {
     font-size: 21px;
+  }
+}
+
+@media #{$mqTabletWidth}{
+  #hero {
+    .item {
+      min-height: 500px;
+    }
   }
 }
 

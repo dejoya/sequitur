@@ -1,11 +1,19 @@
 .box-grid {
 
+  position: relative;
+
   .row {
     .col {
       margin: 20px 0 0;
       position: relative;
       .box {
+        display: block;
         position: relative;
+        overflow: hidden;
+
+        img {
+          display: block;
+        }
       }
 
     }
@@ -14,21 +22,47 @@
   .name {
     position: absolute;
     color: $defaultFontColor;
-    font-size: 2rem;
-    padding: 2rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    padding: 1.5rem 4rem 1.5rem 1.5rem;
+    background-color: rgba(51, 204, 255, .9);
   }
 
   .showcase {
     width: 100%;
     position: relative;
-
+    overflow: hidden;
     .name {
       top: 4.5rem;
-      background-color: rgba(51, 204, 255, .9);
+      font-size: 2rem;
       padding: 1.75rem 12rem 1.75rem 2rem;
     }
   }
+}
 
+.no-touch {
+  .box-grid {
+
+    .name {
+      left: -100%;
+      opacity: 0;
+      @include transition(all 200ms ease-out);
+    }
+
+    .showcase {
+      .name {
+        left: 0;
+        opacity: 1;
+      }
+    }
+
+    .box:hover {
+      .name {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 @media #{$mqTabletWidth}{
