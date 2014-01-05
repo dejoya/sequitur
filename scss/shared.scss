@@ -96,26 +96,7 @@
   }
 }
 
-.view-all {
-  float: right;
-  font-size: 24px;
-  padding-right: 35px;
-  margin: 35px 15px;
-  background: url(/images/icon-plus.png) right 50% no-repeat;
-  background-size: 20px 20px;
-  cursor: pointer;
-}
 
-.slide-down {
-  overflow: hidden;
-  height: 0;
-  opacity: 0;
-  @include transition(all 300ms ease-in);
-
-  .row:first-child {
-    margin-top: 0;
-  }
-}
 
 .row {
   @include clearfix;
