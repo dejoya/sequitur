@@ -22,7 +22,7 @@
             });
 
             if ($target.length == 1){
-                console.log($header.outerHeight(true))
+                
                 $.smoothScroll({
                     scrollTarget: $target,
                     offset: -parseInt($body.css('paddingTop'))
@@ -39,7 +39,7 @@
             var videoTop = $studioVideo.offset().top;
             var winHeight = $window.height();
             var videoHeight = $studioVideo.height();
-            console.log(scrollTop + winHeight >= videoTop, scrollTop <= videoTop + videoHeight)
+            
             if (scrollTop + winHeight >= videoTop && scrollTop <= videoTop + videoHeight){
                 $studioVideo.get(0).play();
             }

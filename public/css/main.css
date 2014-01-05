@@ -313,31 +313,32 @@ a, .blue {
   .sub-head {
     font-size: 24px;
     line-height: 1.3em;
+    padding-top: .8em;
   }
 
-  /* line 140, ../../scss/shared.scss */
+  /* line 141, ../../scss/shared.scss */
   .row .col {
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 145, ../../scss/shared.scss */
+  /* line 146, ../../scss/shared.scss */
   .row .col:first-child {
     margin-left: 0;
   }
-  /* line 152, ../../scss/shared.scss */
+  /* line 153, ../../scss/shared.scss */
   .row.col-2 .col {
     width: 49%;
   }
-  /* line 158, ../../scss/shared.scss */
+  /* line 159, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 161, ../../scss/shared.scss */
+  /* line 162, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 168, ../../scss/shared.scss */
+  /* line 169, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
   }
@@ -425,7 +426,6 @@ a, .blue {
   border: none;
   background-color: #fff;
   height: 50px;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.25);
   -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 400ms ease-in-out;
   -moz-transition: background-color 200ms ease-in-out, -moz-transform 400ms ease-in-out;
   -o-transition: background-color 200ms ease-in-out, -o-transform 400ms ease-in-out;
