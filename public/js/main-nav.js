@@ -47,8 +47,11 @@
             $nav.on(eventName, 'a', function (e) {
                 close();
                 var $this = $(this);
-                $this.siblings().removeClass('active');
-                $this.addClass('active');
+                if (!$this.hasClass('active')){
+                    $nav.find('.active').removeClass('active');
+                    $this.addClass('active');
+                }
+                
             });
 
 //            $('li', $nav).each(function (i) {

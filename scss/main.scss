@@ -88,6 +88,12 @@ a, .blue {
 @import "project.scss";
 
 
+#site-footer {
+  p {
+    font-size: 21px;
+  }
+}
+
 @media #{$mqTabletWidth}{
   html {
     font-size: 12px;

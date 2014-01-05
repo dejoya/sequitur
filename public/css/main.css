@@ -841,19 +841,14 @@ a, .blue {
   margin: -1.3em 0 0 -2em;
 }
 
-/* line 134, ../../scss/home.scss */
-#how-to-reach-us p {
-  font-size: 21px;
-}
-
 @media only screen and (min-width: 570px) {
-  /* line 141, ../../scss/home.scss */
+  /* line 135, ../../scss/home.scss */
   #hero .item {
     min-height: 500px;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 150, ../../scss/home.scss */
+  /* line 144, ../../scss/home.scss */
   #hero .item h2 {
     width: 60%;
   }
@@ -872,28 +867,33 @@ a, .blue {
   max-width: 100%;
 }
 
+/* line 92, ../../scss/main.scss */
+#site-footer p {
+  font-size: 21px;
+}
+
 @media only screen and (min-width: 570px) {
-  /* line 92, ../../scss/main.scss */
+  /* line 98, ../../scss/main.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 96, ../../scss/main.scss */
+  /* line 102, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 100, ../../scss/main.scss */
+  /* line 106, ../../scss/main.scss */
   h2 {
     font-size: 60px;
   }
 
-  /* line 105, ../../scss/main.scss */
+  /* line 111, ../../scss/main.scss */
   h3 {
     font-size: 30px;
   }
 
-  /* line 109, ../../scss/main.scss */
+  /* line 115, ../../scss/main.scss */
   h4 {
     font-size: 24px;
   }
