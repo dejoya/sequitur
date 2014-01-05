@@ -105,15 +105,16 @@ body {
   padding-top: 50px;
   background-color: #f1f1f1;
   color: #59595c;
+  -webkit-text-size-adjust: 100%;
 }
 
-/* line 30, ../../scss/main.scss */
+/* line 31, ../../scss/main.scss */
 h1 {
   font-family: "Colfax Light", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-/* line 35, ../../scss/main.scss */
+/* line 36, ../../scss/main.scss */
 h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: "Sentinel", Georgia, serif;
@@ -122,47 +123,47 @@ h2, h3, h4, h5, h6 {
   line-height: 1.3em;
 }
 
-/* line 43, ../../scss/main.scss */
+/* line 44, ../../scss/main.scss */
 h2 {
   font-size: 30px;
 }
 
-/* line 47, ../../scss/main.scss */
+/* line 48, ../../scss/main.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 51, ../../scss/main.scss */
+/* line 52, ../../scss/main.scss */
 h4 {
   font-size: 21px;
 }
 
-/* line 55, ../../scss/main.scss */
+/* line 56, ../../scss/main.scss */
 p {
   font-size: 1.2rem;
   line-height: 1.3em;
   margin: 1em 0;
 }
-/* line 60, ../../scss/main.scss */
+/* line 61, ../../scss/main.scss */
 p.small {
   font-size: 1.25rem;
 }
-/* line 64, ../../scss/main.scss */
+/* line 65, ../../scss/main.scss */
 p.large {
   font-size: 1.3rem;
 }
-/* line 68, ../../scss/main.scss */
+/* line 69, ../../scss/main.scss */
 p.xlarge {
   font-size: 1.5rem;
 }
 
-/* line 73, ../../scss/main.scss */
+/* line 74, ../../scss/main.scss */
 img {
   border: none;
   max-width: 100%;
 }
 
-/* line 78, ../../scss/main.scss */
+/* line 79, ../../scss/main.scss */
 a, .blue {
   text-decoration: none;
   color: #33ccff;
@@ -678,10 +679,10 @@ a, .blue {
 .no-touch .box-grid .name {
   left: -100%;
   opacity: 0;
-  -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
-  -o-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 /* line 81, ../../scss/box-grid.scss */
 .no-touch .box-grid .box:hover .name {
@@ -867,33 +868,33 @@ a, .blue {
   max-width: 100%;
 }
 
-/* line 92, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 #site-footer p {
   font-size: 21px;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 98, ../../scss/main.scss */
+  /* line 99, ../../scss/main.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 102, ../../scss/main.scss */
+  /* line 103, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 106, ../../scss/main.scss */
+  /* line 107, ../../scss/main.scss */
   h2 {
     font-size: 60px;
   }
 
-  /* line 111, ../../scss/main.scss */
+  /* line 112, ../../scss/main.scss */
   h3 {
     font-size: 30px;
   }
 
-  /* line 115, ../../scss/main.scss */
+  /* line 116, ../../scss/main.scss */
   h4 {
     font-size: 24px;
   }

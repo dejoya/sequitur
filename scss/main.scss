@@ -25,6 +25,7 @@ body {
   padding-top: $headerPhoneHeight;
   background-color: $offWhite;
   color: $defaultFontColor;
+  -webkit-text-size-adjust: 100%;
 }
 
 h1 {

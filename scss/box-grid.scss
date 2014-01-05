@@ -67,7 +67,7 @@
     .name {
       left: -100%;
       opacity: 0;
-      @include transition(all 200ms ease-out);
+      @include transition(all 200ms ease-in-out);
     }
 
     // .showcase {
