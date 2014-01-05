@@ -70,12 +70,12 @@
       @include transition(all 200ms ease-out);
     }
 
-    .showcase {
-      .name {
-        left: 0;
-        opacity: 1;
-      }
-    }
+    // .showcase {
+    //   .name {
+    //     left: 0;
+    //     opacity: 1;
+    //   }
+    // }
 
     .box:hover {
       .name {

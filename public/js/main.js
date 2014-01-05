@@ -45,7 +45,7 @@
       });
 
 
-      $('.slide-down').each(function(){
+      $('.box-grid .slide-down').each(function(){
         var $this = $(this);
         var $clone = $this.clone();
 

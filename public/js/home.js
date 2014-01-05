@@ -24,9 +24,11 @@
             if ($target.length == 1){
                 
                 $.smoothScroll({
-                    scrollTarget: $target,
-                    offset: -parseInt($body.css('paddingTop'))
-                })
+                    scrollTarget: $target
+                    //offset: -parseInt($body.css('paddingTop'))
+                });
+
+                $header.removeClass('slide-down').addClass('slide-up')
             }
         });
 

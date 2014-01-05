@@ -101,6 +101,22 @@
 }
 
 #our-studio {
+  position: relative;
+
+  .container {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .blocker {
+    position: absolute;
+    z-index: 1;
+    background: rgba(#333333, .4);
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+
   .video-holder {
     //padding-bottom: 4rem;
     video {
