@@ -261,7 +261,7 @@ a, .blue {
 /* line 89, ../../scss/shared.scss */
 .sub-head {
   font-size: 18px;
-  padding-bottom: 6.5rem;
+  padding-bottom: 1rem;
 }
 /* line 93, ../../scss/shared.scss */
 .sub-head a {
@@ -276,7 +276,7 @@ a, .blue {
 }
 /* line 104, ../../scss/shared.scss */
 .row .col {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 /* line 107, ../../scss/shared.scss */
 .row .col h4, .row .col p {
@@ -284,36 +284,38 @@ a, .blue {
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 114, ../../scss/shared.scss */
+  /* line 116, ../../scss/shared.scss */
   .sub-head {
     font-size: 24px;
     line-height: 1.3em;
     padding-top: .8em;
+    padding-bottom: 6.5rem;
   }
 
-  /* line 122, ../../scss/shared.scss */
+  /* line 125, ../../scss/shared.scss */
   .row .col {
+    margin: 40px 0;
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 127, ../../scss/shared.scss */
+  /* line 131, ../../scss/shared.scss */
   .row .col:first-child {
     margin-left: 0;
   }
-  /* line 134, ../../scss/shared.scss */
+  /* line 138, ../../scss/shared.scss */
   .row.col-2 .col {
     width: 49%;
   }
-  /* line 140, ../../scss/shared.scss */
+  /* line 144, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 143, ../../scss/shared.scss */
+  /* line 147, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 150, ../../scss/shared.scss */
+  /* line 154, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
   }
@@ -684,35 +686,35 @@ a, .blue {
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-/* line 81, ../../scss/box-grid.scss */
+/* line 74, ../../scss/box-grid.scss */
 .no-touch .box-grid .box:hover .name {
   left: 0;
   opacity: 1;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 93, ../../scss/box-grid.scss */
+  /* line 86, ../../scss/box-grid.scss */
   .box-grid .row {
     margin: 2% 0;
   }
-  /* line 96, ../../scss/box-grid.scss */
+  /* line 89, ../../scss/box-grid.scss */
   .box-grid .row .col {
     margin: 0 0 0 2%;
     padding: 0;
   }
-  /* line 101, ../../scss/box-grid.scss */
+  /* line 94, ../../scss/box-grid.scss */
   .box-grid .row .col:first-child {
     margin-left: 0;
   }
-  /* line 108, ../../scss/box-grid.scss */
+  /* line 101, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col {
     width: 32%;
   }
-  /* line 111, ../../scss/box-grid.scss */
+  /* line 104, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 118, ../../scss/box-grid.scss */
+  /* line 111, ../../scss/box-grid.scss */
   .box-grid .row.col-4 .col {
     width: 23.5%;
   }
@@ -818,12 +820,21 @@ a, .blue {
   position: relative;
 }
 /* line 106, ../../scss/home.scss */
-#our-studio .container {
+#our-studio .video-holder {
+  display: none;
+}
+
+/* line 113, ../../scss/home.scss */
+.no-touch #our-studio .static-image-holder {
+  display: none;
+}
+/* line 117, ../../scss/home.scss */
+.no-touch #our-studio .container {
   position: absolute;
   z-index: 2;
 }
-/* line 111, ../../scss/home.scss */
-#our-studio .blocker {
+/* line 122, ../../scss/home.scss */
+.no-touch #our-studio .blocker {
   position: absolute;
   z-index: 1;
   background: rgba(51, 51, 51, 0.4);
@@ -831,25 +842,29 @@ a, .blue {
   width: 100%;
   top: 0;
 }
-/* line 122, ../../scss/home.scss */
-#our-studio .video-holder video {
+/* line 131, ../../scss/home.scss */
+.no-touch #our-studio .video-holder {
   display: block;
 }
-/* line 125, ../../scss/home.scss */
-#our-studio .video-holder .vjs-big-play-button {
+/* line 134, ../../scss/home.scss */
+.no-touch #our-studio .video-holder video {
+  display: block;
+}
+/* line 137, ../../scss/home.scss */
+.no-touch #our-studio .video-holder .vjs-big-play-button {
   top: 50%;
   left: 50%;
   margin: -1.3em 0 0 -2em;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 135, ../../scss/home.scss */
+  /* line 147, ../../scss/home.scss */
   #hero .item {
     min-height: 500px;
   }
 }
 @media only screen and (min-width: 769px) {
-  /* line 144, ../../scss/home.scss */
+  /* line 156, ../../scss/home.scss */
   #hero .item h2 {
     width: 60%;
   }
@@ -872,30 +887,39 @@ a, .blue {
 #site-footer p {
   font-size: 21px;
 }
+/* line 97, ../../scss/main.scss */
+#site-footer .pull-up {
+  margin-top: -20px;
+}
 
 @media only screen and (min-width: 570px) {
-  /* line 99, ../../scss/main.scss */
+  /* line 103, ../../scss/main.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 103, ../../scss/main.scss */
+  /* line 107, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 107, ../../scss/main.scss */
+  /* line 111, ../../scss/main.scss */
   h2 {
     font-size: 60px;
   }
 
-  /* line 112, ../../scss/main.scss */
+  /* line 116, ../../scss/main.scss */
   h3 {
     font-size: 30px;
   }
 
-  /* line 116, ../../scss/main.scss */
+  /* line 120, ../../scss/main.scss */
   h4 {
     font-size: 24px;
+  }
+
+  /* line 124, ../../scss/main.scss */
+  #site-footer .pull-up {
+    margin-top: 0;
   }
 }

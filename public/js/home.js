@@ -34,10 +34,13 @@
 
 
             }
-        });
+        });        
 
-        $.subscribe('delayed-resize', resizeVideo);
-        $window.on('scroll', playVideo);
+        // not showing video on touch devices
+        if (!Modernizr.touch){
+            $.subscribe('delayed-resize', resizeVideo);
+            $window.on('scroll', playVideo);
+        }
 
         function playVideo(){
             // check to see if it is in view

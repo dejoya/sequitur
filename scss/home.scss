@@ -103,6 +103,17 @@
 #our-studio {
   position: relative;
 
+  .video-holder {
+    display: none;
+  }
+}
+
+.no-touch #our-studio {
+
+  .static-image-holder {
+    display: none;
+  }
+
   .container {
     position: absolute;
     z-index: 2;
@@ -118,7 +129,8 @@
   }
 
   .video-holder {
-    //padding-bottom: 4rem;
+    display: block;
+
     video {
       display: block;
     }

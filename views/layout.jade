@@ -76,7 +76,7 @@ html(class='no-js', lang='en')
               .col
                 p.top-line.short.
                   We like drunken selfies on <a href="#" target="_blank">Facebook</a>.
-            .row.col-3
+            .row.col-3.pull-up
               .col
                 p.top-line.short.
                   We stubbornly maintain a landline at <span class="blue">415.670.9735</span>.
@@ -86,11 +86,9 @@ html(class='no-js', lang='en')
 
         if (env == 'dev')
             script(src="/js/jquery-1.10.2.min.js")
-            //script(src="/js/bootstrap.min.js")
             script(src="//localhost:35729/livereload.js")
         else
             script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-            //script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js")
 
         script(src="/js/headroom.min.js")
         script(src="/js/jquery.smooth-scroll.min.js")

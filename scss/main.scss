@@ -93,6 +93,10 @@ a, .blue {
   p {
     font-size: 21px;
   }
+
+  .pull-up {
+    margin-top: -20px;
+  }
 }
 
 @media #{$mqTabletWidth}{
@@ -115,5 +119,9 @@ a, .blue {
 
   h4 {
     font-size: 24px;
+  }
+
+  #site-footer .pull-up {
+    margin-top: 0;
   }
 }
