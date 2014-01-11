@@ -8,7 +8,8 @@
             isOpen = false,
             locked = false,
             lockTimeout = null,
-            eventName = Modernizr.touch ? 'touchstart' : 'click';
+            eventName = Modernizr.touch ? 'touchstart' : 'click',
+            headroom;
 
 
 
@@ -22,7 +23,7 @@
             $nav = $('#main-nav');
             $header = $('#site-header');
 
-            var headroom = new Headroom($header.get(0),
+            headroom = new Headroom($header.get(0),
               {
                 tolerance: 1,
                 offset: 50,
@@ -35,11 +36,12 @@
 
             headroom.init();
 
-            $header.on(eventName, '.main-nav-toggle', function () {
+            $header.on(eventName, '.main-nav-toggle', function (e) {
                 if (isOpen) {
                     close();
                 }
                 else {
+                    e.stopPropagation();
                     open();
                 }
             });
@@ -59,18 +61,16 @@
                     headroom.unpin();
                 }
             })
-
-//            $('li', $nav).each(function (i) {
-//                $(this).css('webkitTransitionDelay', (100 + 15 * i) + 'ms')
-//            });
         }
 
         function close() {
             if (isOpen) {
                 lock();
                 isOpen = false;
+                $('html').removeClass('no-scroll');
                 $header.removeClass('nav-open');
                 $nav.removeClass('open');
+                
                 unlock();
             }
         }
@@ -79,8 +79,10 @@
             if (!isOpen) {
                 lock();
                 isOpen = true;
+                $('html').addClass('no-scroll');
                 $header.addClass('nav-open');
                 $nav.addClass('open');
+                
                 unlock();
             }
         }
