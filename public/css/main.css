@@ -288,8 +288,22 @@ a, .blue {
   padding-right: 20px;
 }
 
+@media only screen and (max-width: 569px) {
+  /* line 121, ../../scss/shared.scss */
+  .box-grid .row.small-col-2 .col, .row.small-col-2 .col {
+    float: left;
+    margin-left: 2%;
+    padding: 0;
+    width: 49%;
+  }
+  /* line 127, ../../scss/shared.scss */
+  .box-grid .row.small-col-2 .col:nth-child(odd), .row.small-col-2 .col:nth-child(odd) {
+    margin-left: 0;
+    clear: both;
+  }
+}
 @media only screen and (min-width: 570px) {
-  /* line 120, ../../scss/shared.scss */
+  /* line 136, ../../scss/shared.scss */
   .sub-head {
     font-size: 24px;
     line-height: 1.3em;
@@ -297,32 +311,43 @@ a, .blue {
     padding-bottom: 6.5rem;
   }
 
-  /* line 129, ../../scss/shared.scss */
+  /* line 145, ../../scss/shared.scss */
   .row .col {
     margin: 40px 0;
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 135, ../../scss/shared.scss */
-  .row .col:first-child {
-    margin-left: 0;
-  }
-  /* line 142, ../../scss/shared.scss */
+  /* line 153, ../../scss/shared.scss */
   .row.col-2 .col {
     width: 49%;
   }
-  /* line 148, ../../scss/shared.scss */
+  /* line 156, ../../scss/shared.scss */
+  .row.col-2 .col:nth-child(odd) {
+    margin-left: 0;
+    clear: both;
+  }
+  /* line 164, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 151, ../../scss/shared.scss */
+  /* line 167, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 158, ../../scss/shared.scss */
+  /* line 171, ../../scss/shared.scss */
+  .row.col-3 .col:nth-child(3n + 1) {
+    margin-left: 0;
+    clear: both;
+  }
+  /* line 179, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
+  }
+  /* line 182, ../../scss/shared.scss */
+  .row.col-4 .col:nth-child(4n + 1) {
+    margin-left: 0;
+    clear: both;
   }
 }
 /* line 3, ../../scss/owl-override.scss */
@@ -623,7 +648,7 @@ a, .blue {
 }
 /* line 6, ../../scss/box-grid.scss */
 .box-grid .row .col {
-  margin: 20px 0 0;
+  margin: 2% 0 0 2%;
   position: relative;
 }
 /* line 9, ../../scss/box-grid.scss */
@@ -698,28 +723,19 @@ a, .blue {
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 86, ../../scss/box-grid.scss */
-  .box-grid .row {
-    margin: 2% 0;
-  }
-  /* line 89, ../../scss/box-grid.scss */
+  /* line 88, ../../scss/box-grid.scss */
   .box-grid .row .col {
-    margin: 0 0 0 2%;
     padding: 0;
   }
-  /* line 94, ../../scss/box-grid.scss */
-  .box-grid .row .col:first-child {
-    margin-left: 0;
-  }
-  /* line 101, ../../scss/box-grid.scss */
+  /* line 93, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col {
     width: 32%;
   }
-  /* line 104, ../../scss/box-grid.scss */
+  /* line 96, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 111, ../../scss/box-grid.scss */
+  /* line 103, ../../scss/box-grid.scss */
   .box-grid .row.col-4 .col {
     width: 23.5%;
   }

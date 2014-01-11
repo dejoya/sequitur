@@ -116,6 +116,22 @@
 
 }
 
+@media #{$mqSubTabletWidth}{
+  .box-grid .row.small-col-2, .row.small-col-2 {
+    .col {
+      float: left;
+      margin-left: 2%;
+      padding: 0;
+      width: 49%;
+
+      &:nth-child(odd) {
+        margin-left: 0;
+        clear: both;
+      }
+    }
+  }
+}
+
 @media #{$mqTabletWidth}{
   .sub-head {
     font-size: 24px;
@@ -131,16 +147,16 @@
       float: left;
       margin-left: 2%;
       padding: 0;
-
-      &:first-child {
-        margin-left: 0;
-
-      }
     }
 
     &.col-2 {
       .col {
         width: 49%;
+
+        &:nth-child(odd){
+          margin-left: 0;
+          clear: both;
+        }
       }
     }
 
@@ -151,12 +167,22 @@
         &.span-2 {
           width: 66%;
         }
+
+        &:nth-child(3n + 1){
+          margin-left: 0;
+          clear: both;
+        }
       }
     }
 
     &.col-4 {
       .col {
         width: 23.5%;
+
+        &:nth-child(4n + 1){
+          margin-left: 0;
+          clear: both;
+        }
       }
     }
   }

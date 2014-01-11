@@ -18,5 +18,6 @@ $headerHeight: 100px;
 $touchpointPadding: 15px;
 
 /* Media Queries */
+$mqSubTabletWidth: "only screen and (max-width: 569px)";
 $mqTabletWidth: "only screen and (min-width: 570px)";
 $mqDesktopWidth: "only screen and (min-width: 769px)";

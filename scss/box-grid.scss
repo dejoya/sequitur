@@ -4,7 +4,7 @@
 
   .row {
     .col {
-      margin: 20px 0 0;
+      margin: 2% 0 0 2%;
       position: relative;
       .box {
         display: block;
@@ -84,17 +84,9 @@
   .box-grid {
 
     .row {
-      margin: 2% 0;
 
       .col {
-
-        margin: 0 0 0 2%;
         padding: 0;
-
-        &:first-child {
-          margin-left: 0;
-
-        }
       }
 
       &.col-3 {
