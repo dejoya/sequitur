@@ -24,12 +24,12 @@
 
             var headroom = new Headroom($header.get(0),
               {
-                "tolerance": 5,
-                "offset": 50,
-                "classes": {
-                "initial": "animated",
-                  "pinned": "slide-down",
-                  "unpinned": "slide-up"
+                tolerance: 1,
+                offset: 50,
+                classes: {
+                initial: "animated",
+                  pinned: "slide-down",
+                  unpinned: "slide-up"
                 }
             });
 
@@ -53,6 +53,12 @@
                 }
                 
             });
+
+            $(document).on('click touchstart', function(){
+                if ($(window).scrollTop() > $header.height()){
+                    headroom.unpin();
+                }
+            })
 
 //            $('li', $nav).each(function (i) {
 //                $(this).css('webkitTransitionDelay', (100 + 15 * i) + 'ms')
