@@ -8,18 +8,33 @@
     width: 100%;
     background-color: $lightGray;
 
-    h2 {
+    .wrap {
       width: 80%;
     }
 
-    p {
-      font-size: 1.5rem;
-      line-height: 2.5rem;
-      margin-top: 10px;
-      color: $darkGray;
+    h2 {
+      display: inline;
+      background-color: rgba($blue, .85);
+      color: $white;
+      font-weight: 300;
+      line-height: 1.05;
+    }
 
-      .cta {
-        margin-bottom: -8px;
+    p {
+      display: inline-block;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      margin: 0;
+      padding: .3rem 1rem;
+      color: $white;
+      background-color: rgba(#aaa, .85);
+
+      a {
+        color: $white;
+        font-size: 2.5rem;
+        position: relative; 
+        top: .35rem;
+        padding: 0 .5rem;
       }
     }
   }
@@ -153,10 +168,8 @@
 
 @media #{$mqDesktopWidth}{
   #hero {
-    .item {
-      h2 {
-        width: 60%;
-      }
+    .wrap {
+      width: 60%;
     }
   }
 }
