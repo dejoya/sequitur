@@ -106,13 +106,6 @@
   .video-holder {
     display: none;
   }
-}
-
-.no-touch #our-studio {
-
-  .static-image-holder {
-    display: none;
-  }
 
   .container {
     position: absolute;
@@ -126,6 +119,14 @@
     height: 100%;
     width: 100%;
     top: 0;
+  }
+
+}
+
+.no-touch #our-studio {
+
+  .static-image-holder {
+    display: none;
   }
 
   .video-holder {
