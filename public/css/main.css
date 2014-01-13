@@ -299,7 +299,7 @@ a, .blue {
   padding-right: 20px;
 }
 
-@media only screen and (max-width: 569px) {
+@media only screen and (min-width: 400px) and (max-width: 569px) {
   /* line 128, ../../scss/shared.scss */
   .box-grid .row.small-col-2 .col, .row.small-col-2 .col {
     float: left;
@@ -662,7 +662,7 @@ a, .blue {
 }
 /* line 7, ../../scss/box-grid.scss */
 .box-grid .row .col {
-  margin: 2% 0 0 2%;
+  margin: 10px 0 0;
   position: relative;
 }
 /* line 10, ../../scss/box-grid.scss */
@@ -730,30 +730,37 @@ a, .blue {
   opacity: 1;
 }
 
-@media only screen and (min-width: 570px) {
-  /* line 84, ../../scss/box-grid.scss */
+@media only screen and (min-width: 400px) and (max-width: 569px) {
+  /* line 80, ../../scss/box-grid.scss */
   .box-grid .row .col {
+    margin: 2% 0 0 2%;
+  }
+}
+@media only screen and (min-width: 570px) {
+  /* line 93, ../../scss/box-grid.scss */
+  .box-grid .row .col {
+    margin: 2% 0 0 2%;
     padding: 0;
   }
-  /* line 89, ../../scss/box-grid.scss */
+  /* line 99, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col {
     width: 32%;
   }
-  /* line 92, ../../scss/box-grid.scss */
+  /* line 102, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 99, ../../scss/box-grid.scss */
+  /* line 109, ../../scss/box-grid.scss */
   .box-grid .row.col-4 .col {
     width: 23.5%;
   }
-  /* line 106, ../../scss/box-grid.scss */
+  /* line 116, ../../scss/box-grid.scss */
   .box-grid .showcase .name {
     top: 4.5rem;
     font-size: 2rem;
     padding: 1.75rem 5.25rem 1.75rem 2rem;
   }
-  /* line 113, ../../scss/box-grid.scss */
+  /* line 123, ../../scss/box-grid.scss */
   .box-grid .view-all {
     font-size: 2.0em;
     background-size: 20px 20px;
