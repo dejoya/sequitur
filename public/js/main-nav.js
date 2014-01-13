@@ -52,6 +52,7 @@
                 if (!$this.hasClass('active')){
                     $nav.find('.active').removeClass('active');
                     $this.addClass('active');
+                    window.location = $this.attr('href');
                 }
                 
             });
