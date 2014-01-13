@@ -140,6 +140,21 @@
   }
 }
 
+@media #{$mqPhoneLandscape}{
+  #main-nav {
+    li {
+      width: 50%;
+      float: left;
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 @media #{$mqTabletWidth}{
   #site-header {
     height: $headerHeight;
