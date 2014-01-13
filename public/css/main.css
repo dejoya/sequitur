@@ -778,14 +778,14 @@ a, .blue {
   background-color: rgba(51, 204, 255, 0.85);
   color: white;
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 1.25;
 }
 /* line 23, ../../scss/home.scss */
 #hero .item p {
   display: inline-block;
   font-size: 1.3rem;
   line-height: 2rem;
-  margin: 0;
+  margin: .1rem 0;
   padding: .3rem 1rem;
   color: white;
   background-color: rgba(170, 170, 170, 0.85);
