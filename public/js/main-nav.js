@@ -58,9 +58,11 @@
                 
             });
 
-            $(document).on('click touchstart', function(){
+            $(document).on(eventName, function(){
                 if ($(window).scrollTop() > $header.height()){
-                    headroom.unpin();
+                    setTimeout(function(){
+                        headroom.unpin();
+                    }, 10);
                 }
             })
         }
