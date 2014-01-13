@@ -36,15 +36,19 @@
 
             headroom.init();
 
-            $header.on(eventName, '.main-nav-toggle', function (e) {
-                if (isOpen) {
-                    close();
-                }
-                else {
+            $header
+                .on(eventName, '.main-nav-toggle', function (e) {
+                    if (isOpen) {
+                        close();
+                    }
+                    else {
+                        e.stopPropagation();
+                        open();
+                    }
+                })
+                .on(eventName, function(e){
                     e.stopPropagation();
-                    open();
-                }
-            });
+                });
 
             $nav.on(eventName, 'a', function (e) {
                 close();
@@ -55,7 +59,6 @@
                     // added in for touchstart
                     window.location = $this.attr('href');
                 }
-                
             });
 
             $(document).on(eventName, function(){
