@@ -64,7 +64,9 @@
                         headroom.unpin();
                     }, 10);
                 }
-            })
+            });
+
+            $(window).on('orientationchange', setTwoColNav);
         }
 
         function close() {
@@ -85,10 +87,7 @@
                 isOpen = true;
                 $('html').addClass('no-scroll');
 
-                if ($(window).height() < $nav.find('ul').outerHeight() + $header.outerHeight()){
-                    $nav.addClass('two-col');
-                }
-
+                setTwoColNav();
                 $header.addClass('nav-open');
                 $nav.addClass('open');
                 
@@ -106,6 +105,15 @@
             lockTimeout = setTimeout(function(){
                 locked = false;
             }, 200);
+        }
+
+        function setTwoColNav(){
+            if ($(window).height() < $nav.find('ul').outerHeight() + $header.outerHeight()){
+                $nav.addClass('two-col');
+            }
+            else {
+                $nav.removeClass('two-col')
+            }
         }
     };
 
