@@ -138,6 +138,19 @@
       @include translateY(0);
     }
   }
+
+  &.two-col {
+    li {
+      width: 50%;
+      float: left;
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media #{$mqPhoneLandscape}{

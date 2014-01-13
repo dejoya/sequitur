@@ -52,6 +52,7 @@
                 if (!$this.hasClass('active')){
                     $nav.find('.active').removeClass('active');
                     $this.addClass('active');
+                    // added in for touchstart
                     window.location = $this.attr('href');
                 }
                 
@@ -70,7 +71,7 @@
                 isOpen = false;
                 $('html').removeClass('no-scroll');
                 $header.removeClass('nav-open');
-                $nav.removeClass('open');
+                $nav.removeClass('open two-col');
                 
                 unlock();
             }
@@ -81,6 +82,11 @@
                 lock();
                 isOpen = true;
                 $('html').addClass('no-scroll');
+
+                if ($(window).height() < $nav.find('ul').outerHeight() + $header.outerHeight()){
+                    $nav.addClass('two-col');
+                }
+
                 $header.addClass('nav-open');
                 $nav.addClass('open');
                 
