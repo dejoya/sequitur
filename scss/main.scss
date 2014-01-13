@@ -55,19 +55,23 @@ h4 {
 
 p {
   font-size: 1.2rem;
-  line-height: 1.3em;
+  line-height: 1.5em;
   margin: 1em 0;
 
   &.small {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   &.large {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   &.xlarge {
     font-size: 1.5rem;
+  }
+  
+  &.strong {
+    font-family: $strongStack;
   }
 }
 
@@ -91,7 +95,7 @@ a, .blue {
 
 #site-footer {
   p {
-    font-size: 21px;
+    font-size: 1.5em;
   }
 
   .pull-up {
@@ -106,6 +110,13 @@ a, .blue {
 
   body {
     padding-top: $headerHeight;
+  }
+
+  p.small {
+       font-size: 1.25rem;
+  }
+  p.large {
+       font-size: 1.3rem;
   }
 
   h2 {

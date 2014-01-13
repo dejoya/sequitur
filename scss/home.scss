@@ -38,6 +38,10 @@
       }
     }
   }
+
+  .dark-bg {
+    padding-bottom: 70px;
+  }
 }
 
 #how-were-different {
@@ -65,20 +69,30 @@
 #how-we-do-it {
   padding-bottom: 60px;
 
+  p {
+    margin-bottom: 4em;
+  }
+  
   .number {
     margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 24px;
   }
 }
 
 #who-we-are {
   .col {
+     
     img {
       height: 220px;
-    }
+     }
 
     h4 {
       margin-top: 1rem;
+    }
+    
+    p {
+      margin-bottom: 4em;
     }
 
     .role {
@@ -89,7 +103,7 @@
 }
 
 #what-we-think {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 
   .by-line {
     margin: 25px 0 20px;
@@ -102,6 +116,12 @@
     display: block;
     background: url(/images/icon-plus.png) 0 0 no-repeat;
     background-size: cover;
+  }
+  
+  .top-line {
+    &.white {
+      margin-top: 2em;
+    }
   }
 }
 
@@ -121,10 +141,33 @@
   .video-holder {
     display: none;
   }
+  
+  .floater {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
 
   .container {
+    position: relative;
+  }
+
+}
+
+.no-touch #our-studio {
+
+  .static-image-holder {
+    display: none;
+  }
+
+  .floater {
     position: absolute;
+    width: 100%;
     z-index: 2;
+  }
+
+  .container {
+    position: relative;
   }
 
   .blocker {
@@ -162,6 +205,14 @@
   #hero {
     .item {
       min-height: 500px;
+    }
+  }
+  
+  #what-we-think {
+    .top-line {
+      &.white {
+        margin-top: 0;
+      }      
     }
   }
 }

@@ -29,6 +29,7 @@
 }
 
 .top-line {
+  font-size: 2em;
   position: relative;
   padding-top: .5em;
   &:before {
@@ -36,7 +37,7 @@
   }
   &.short {
     &:before {
-      width: 14px;
+      width: 24px;
     }
   }
   &.white {
@@ -91,12 +92,18 @@
 }
 
 .sub-head {
-  font-size: 18px;
+  font-size: 1.7em;
+  line-height: 1.3em;
+  padding-top: .7em;
   padding-bottom: 1rem;
 
   a {
     text-decoration: underline;
     color: inherit;
+  }
+  
+  br {
+    display: none;
   }
 }
 
@@ -134,16 +141,19 @@
 
 @media #{$mqTabletWidth}{
   .sub-head {
-    font-size: 24px;
-    line-height: 1.3em;
-    padding-top: .8em;
+    font-size: 2em;
+    padding-top: .5em;
     padding-bottom: 6.5rem;
+    
+    br {
+      display: block;
+    }
   }
 
   .row {
 
     .col {
-      margin: 40px 0;
+      margin: 40px 0 40px 0;
       float: left;
       margin-left: 2%;
       padding: 0;

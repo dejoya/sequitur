@@ -9,4 +9,16 @@
       max-width: 100%;
     }
   }
+  
+  .services {
+    font-family: $strongStack;
+    color: $blue;
+  }
+  
+  .top-line {
+    &.short {
+      font-size: 1.6em;
+    }
+  }
+
 }

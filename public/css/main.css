@@ -117,7 +117,7 @@ h1 {
 /* line 36, ../../scss/main.scss */
 h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: "Sentinel", Georgia, serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
   font-style: italic;
   color: #33ccff;
   line-height: 1.3em;
@@ -141,29 +141,33 @@ h4 {
 /* line 56, ../../scss/main.scss */
 p {
   font-size: 1.2rem;
-  line-height: 1.3em;
+  line-height: 1.5em;
   margin: 1em 0;
 }
 /* line 61, ../../scss/main.scss */
 p.small {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 /* line 65, ../../scss/main.scss */
 p.large {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 /* line 69, ../../scss/main.scss */
 p.xlarge {
   font-size: 1.5rem;
 }
+/* line 73, ../../scss/main.scss */
+p.strong {
+  font-family: "Colfax Medium", Helvetica, Arial, sans-serif;
+}
 
-/* line 74, ../../scss/main.scss */
+/* line 78, ../../scss/main.scss */
 img {
   border: none;
   max-width: 100%;
 }
 
-/* line 79, ../../scss/main.scss */
+/* line 83, ../../scss/main.scss */
 a, .blue {
   text-decoration: none;
   color: #33ccff;
@@ -206,30 +210,31 @@ a, .blue {
 
 /* line 31, ../../scss/shared.scss */
 .top-line {
+  font-size: 2em;
   position: relative;
   padding-top: .5em;
 }
-/* line 38, ../../scss/shared.scss */
+/* line 39, ../../scss/shared.scss */
 .top-line.short:before {
-  width: 14px;
+  width: 24px;
 }
-/* line 43, ../../scss/shared.scss */
+/* line 44, ../../scss/shared.scss */
 .top-line.white:before {
   background: white;
 }
-/* line 48, ../../scss/shared.scss */
+/* line 49, ../../scss/shared.scss */
 .top-line.gray:before {
   background: #585858;
 }
 
-/* line 55, ../../scss/shared.scss */
+/* line 56, ../../scss/shared.scss */
 .bottom-line:after, #main-nav li:last-child:after {
   background: white;
   top: auto;
   bottom: 0;
 }
 
-/* line 63, ../../scss/shared.scss */
+/* line 64, ../../scss/shared.scss */
 .cta, .owl-controls .owl-buttons div {
   display: inline-block;
   width: 30px;
@@ -240,111 +245,120 @@ a, .blue {
   margin-left: 15px;
 }
 
-/* line 74, ../../scss/shared.scss */
+/* line 75, ../../scss/shared.scss */
 .light-bg {
   background-color: #f1f1f1;
 }
 
-/* line 78, ../../scss/shared.scss */
+/* line 79, ../../scss/shared.scss */
 .medium-bg {
   background-color: #585858;
   color: #fff;
 }
 
-/* line 83, ../../scss/shared.scss */
+/* line 84, ../../scss/shared.scss */
 .dark-bg {
   background-color: #1f1f1f;
   color: #ccc;
 }
 
-/* line 88, ../../scss/shared.scss */
+/* line 89, ../../scss/shared.scss */
 .vertical-pad {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* line 93, ../../scss/shared.scss */
+/* line 94, ../../scss/shared.scss */
 .sub-head {
-  font-size: 18px;
+  font-size: 1.7em;
+  line-height: 1.3em;
+  padding-top: .7em;
   padding-bottom: 1rem;
 }
-/* line 97, ../../scss/shared.scss */
+/* line 100, ../../scss/shared.scss */
 .sub-head a {
   text-decoration: underline;
   color: inherit;
 }
-
 /* line 105, ../../scss/shared.scss */
+.sub-head br {
+  display: none;
+}
+
+/* line 112, ../../scss/shared.scss */
 .row {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 108, ../../scss/shared.scss */
+/* line 115, ../../scss/shared.scss */
 .row .col {
   margin: 20px 0;
 }
-/* line 111, ../../scss/shared.scss */
+/* line 118, ../../scss/shared.scss */
 .row .col h4, .row .col p {
   padding-right: 20px;
 }
 
 @media only screen and (max-width: 569px) {
-  /* line 121, ../../scss/shared.scss */
+  /* line 128, ../../scss/shared.scss */
   .box-grid .row.small-col-2 .col, .row.small-col-2 .col {
     float: left;
     margin-left: 2%;
     padding: 0;
     width: 49%;
   }
-  /* line 127, ../../scss/shared.scss */
+  /* line 134, ../../scss/shared.scss */
   .box-grid .row.small-col-2 .col:nth-child(odd), .row.small-col-2 .col:nth-child(odd) {
     margin-left: 0;
     clear: both;
   }
 }
 @media only screen and (min-width: 570px) {
-  /* line 136, ../../scss/shared.scss */
+  /* line 143, ../../scss/shared.scss */
   .sub-head {
-    font-size: 24px;
-    line-height: 1.3em;
-    padding-top: .8em;
+    font-size: 2em;
+    padding-top: .5em;
     padding-bottom: 6.5rem;
   }
+  /* line 148, ../../scss/shared.scss */
+  .sub-head br {
+    display: block;
+  }
 
-  /* line 145, ../../scss/shared.scss */
+  /* line 155, ../../scss/shared.scss */
   .row .col {
-    margin: 40px 0;
+    margin: 40px 0 40px 0;
     float: left;
     margin-left: 2%;
     padding: 0;
   }
-  /* line 153, ../../scss/shared.scss */
+  /* line 163, ../../scss/shared.scss */
   .row.col-2 .col {
     width: 49%;
   }
-  /* line 156, ../../scss/shared.scss */
+  /* line 166, ../../scss/shared.scss */
   .row.col-2 .col:nth-child(odd) {
     margin-left: 0;
     clear: both;
   }
-  /* line 164, ../../scss/shared.scss */
+  /* line 174, ../../scss/shared.scss */
   .row.col-3 .col {
     width: 32%;
   }
-  /* line 167, ../../scss/shared.scss */
+  /* line 177, ../../scss/shared.scss */
   .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 171, ../../scss/shared.scss */
+  /* line 181, ../../scss/shared.scss */
   .row.col-3 .col:nth-child(3n + 1) {
     margin-left: 0;
     clear: both;
   }
-  /* line 179, ../../scss/shared.scss */
+  /* line 189, ../../scss/shared.scss */
   .row.col-4 .col {
     width: 23.5%;
   }
-  /* line 182, ../../scss/shared.scss */
+  /* line 192, ../../scss/shared.scss */
   .row.col-4 .col:nth-child(4n + 1) {
     margin-left: 0;
     clear: both;
@@ -578,7 +592,7 @@ a, .blue {
 /* line 118, ../../scss/main-nav.scss */
 #main-nav a {
   color: #fff;
-  font-family: "Sentinel", Georgia, serif;
+  font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, serif;
   font-style: italic;
   font-size: 18px;
   font-weight: bold;
@@ -646,18 +660,18 @@ a, .blue {
 .box-grid {
   position: relative;
 }
-/* line 6, ../../scss/box-grid.scss */
+/* line 7, ../../scss/box-grid.scss */
 .box-grid .row .col {
   margin: 2% 0 0 2%;
   position: relative;
 }
-/* line 9, ../../scss/box-grid.scss */
+/* line 10, ../../scss/box-grid.scss */
 .box-grid .row .col .box {
   display: block;
   position: relative;
   overflow: hidden;
 }
-/* line 14, ../../scss/box-grid.scss */
+/* line 15, ../../scss/box-grid.scss */
 .box-grid .row .col .box img {
   display: block;
 }
@@ -676,23 +690,17 @@ a, .blue {
   position: relative;
   overflow: hidden;
 }
-/* line 35, ../../scss/box-grid.scss */
-.box-grid .showcase .name {
-  top: 4.5rem;
-  font-size: 2rem;
-  padding: 1.75rem 12rem 1.75rem 2rem;
-}
-/* line 42, ../../scss/box-grid.scss */
+/* line 37, ../../scss/box-grid.scss */
 .box-grid .view-all {
   float: right;
-  font-size: 24px;
+  font-size: 1.5em;
   padding-right: 35px;
   margin: 35px 15px;
-  background: url(/images/icon-plus.png) right 50% no-repeat;
-  background-size: 20px 20px;
+  background: url(/images/icon-plus.png) right 30% no-repeat;
+  background-size: 15px 15px;
   cursor: pointer;
 }
-/* line 52, ../../scss/box-grid.scss */
+/* line 47, ../../scss/box-grid.scss */
 .box-grid .slide-down {
   overflow: hidden;
   height: 0;
@@ -702,12 +710,12 @@ a, .blue {
   -o-transition: all 300ms ease-in;
   transition: all 300ms ease-in;
 }
-/* line 58, ../../scss/box-grid.scss */
+/* line 53, ../../scss/box-grid.scss */
 .box-grid .slide-down .row:first-child {
   margin-top: 0;
 }
 
-/* line 67, ../../scss/box-grid.scss */
+/* line 62, ../../scss/box-grid.scss */
 .no-touch .box-grid .name {
   left: -100%;
   opacity: 0;
@@ -716,28 +724,39 @@ a, .blue {
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-/* line 74, ../../scss/box-grid.scss */
+/* line 69, ../../scss/box-grid.scss */
 .no-touch .box-grid .box:hover .name {
   left: 0;
   opacity: 1;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 88, ../../scss/box-grid.scss */
+  /* line 84, ../../scss/box-grid.scss */
   .box-grid .row .col {
     padding: 0;
   }
-  /* line 93, ../../scss/box-grid.scss */
+  /* line 89, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col {
     width: 32%;
   }
-  /* line 96, ../../scss/box-grid.scss */
+  /* line 92, ../../scss/box-grid.scss */
   .box-grid .row.col-3 .col.span-2 {
     width: 66%;
   }
-  /* line 103, ../../scss/box-grid.scss */
+  /* line 99, ../../scss/box-grid.scss */
   .box-grid .row.col-4 .col {
     width: 23.5%;
+  }
+  /* line 106, ../../scss/box-grid.scss */
+  .box-grid .showcase .name {
+    top: 4.5rem;
+    font-size: 2rem;
+    padding: 1.75rem 5.25rem 1.75rem 2rem;
+  }
+  /* line 113, ../../scss/box-grid.scss */
+  .box-grid .view-all {
+    font-size: 2.0em;
+    background-size: 20px 20px;
   }
 }
 /* line 3, ../../scss/home.scss */
@@ -779,59 +798,72 @@ a, .blue {
   top: .35rem;
   padding: 0 .5rem;
 }
+/* line 42, ../../scss/home.scss */
+#hero .dark-bg {
+  padding-bottom: 70px;
+}
 
-/* line 45, ../../scss/home.scss */
+/* line 49, ../../scss/home.scss */
 #how-were-different .item {
   margin-bottom: 80px;
 }
-/* line 49, ../../scss/home.scss */
+/* line 53, ../../scss/home.scss */
 #how-were-different .item .number {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-/* line 54, ../../scss/home.scss */
+/* line 58, ../../scss/home.scss */
 #how-were-different .item h2 {
   margin-bottom: 40px;
 }
 
-/* line 61, ../../scss/home.scss */
+/* line 65, ../../scss/home.scss */
 #what-we-do {
   padding-bottom: 3rem;
 }
 
-/* line 65, ../../scss/home.scss */
+/* line 69, ../../scss/home.scss */
 #how-we-do-it {
   padding-bottom: 60px;
 }
-/* line 68, ../../scss/home.scss */
+/* line 72, ../../scss/home.scss */
+#how-we-do-it p {
+  margin-bottom: 4em;
+}
+/* line 76, ../../scss/home.scss */
 #how-we-do-it .number {
   margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 24px;
 }
 
-/* line 76, ../../scss/home.scss */
+/* line 86, ../../scss/home.scss */
 #who-we-are .col img {
   height: 220px;
 }
-/* line 80, ../../scss/home.scss */
+/* line 90, ../../scss/home.scss */
 #who-we-are .col h4 {
   margin-top: 1rem;
 }
-/* line 84, ../../scss/home.scss */
+/* line 94, ../../scss/home.scss */
+#who-we-are .col p {
+  margin-bottom: 4em;
+}
+/* line 98, ../../scss/home.scss */
 #who-we-are .col .role {
   font-size: 1.3rem;
   margin: 0 0 2rem;
 }
 
-/* line 91, ../../scss/home.scss */
+/* line 105, ../../scss/home.scss */
 #what-we-think {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
-/* line 94, ../../scss/home.scss */
+/* line 108, ../../scss/home.scss */
 #what-we-think .by-line {
   margin: 25px 0 20px;
 }
-/* line 98, ../../scss/home.scss */
+/* line 112, ../../scss/home.scss */
 #what-we-think .plus {
   text-indent: -9999px;
   width: 20px;
@@ -840,32 +872,56 @@ a, .blue {
   background: url(/images/icon-plus.png) 0 0 no-repeat;
   background-size: cover;
 }
+/* line 122, ../../scss/home.scss */
+#what-we-think .top-line.white {
+  margin-top: 2em;
+}
 
-/* line 109, ../../scss/home.scss */
+/* line 129, ../../scss/home.scss */
 #who-we-toil-for .client-logos {
   margin-bottom: 80px;
 }
-/* line 111, ../../scss/home.scss */
+/* line 131, ../../scss/home.scss */
 #who-we-toil-for .client-logos img {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 118, ../../scss/home.scss */
+/* line 138, ../../scss/home.scss */
 #our-studio {
   position: relative;
 }
-/* line 121, ../../scss/home.scss */
+/* line 141, ../../scss/home.scss */
 #our-studio .video-holder {
   display: none;
 }
-/* line 125, ../../scss/home.scss */
-#our-studio .container {
+/* line 145, ../../scss/home.scss */
+#our-studio .floater {
   position: absolute;
+  width: 100%;
   z-index: 2;
 }
-/* line 130, ../../scss/home.scss */
-#our-studio .blocker {
+/* line 151, ../../scss/home.scss */
+#our-studio .container {
+  position: relative;
+}
+
+/* line 159, ../../scss/home.scss */
+.no-touch #our-studio .static-image-holder {
+  display: none;
+}
+/* line 163, ../../scss/home.scss */
+.no-touch #our-studio .floater {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+/* line 169, ../../scss/home.scss */
+.no-touch #our-studio .container {
+  position: relative;
+}
+/* line 173, ../../scss/home.scss */
+.no-touch #our-studio .blocker {
   position: absolute;
   z-index: 1;
   background: rgba(51, 51, 51, 0.4);
@@ -874,19 +930,19 @@ a, .blue {
   top: 0;
 }
 
-/* line 143, ../../scss/home.scss */
+/* line 186, ../../scss/home.scss */
 .no-touch #our-studio .static-image-holder {
   display: none;
 }
-/* line 147, ../../scss/home.scss */
+/* line 190, ../../scss/home.scss */
 .no-touch #our-studio .video-holder {
   display: block;
 }
-/* line 150, ../../scss/home.scss */
+/* line 193, ../../scss/home.scss */
 .no-touch #our-studio .video-holder video {
   display: block;
 }
-/* line 153, ../../scss/home.scss */
+/* line 196, ../../scss/home.scss */
 .no-touch #our-studio .video-holder .vjs-big-play-button {
   top: 50%;
   left: 50%;
@@ -894,13 +950,18 @@ a, .blue {
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 163, ../../scss/home.scss */
+  /* line 206, ../../scss/home.scss */
   #hero .item {
     min-height: 500px;
   }
+
+  /* line 213, ../../scss/home.scss */
+  #what-we-think .top-line.white {
+    margin-top: 0;
+  }
 }
 @media only screen and (min-width: 769px) {
-  /* line 171, ../../scss/home.scss */
+  /* line 222, ../../scss/home.scss */
   #hero .wrap {
     width: 60%;
   }
@@ -918,43 +979,62 @@ a, .blue {
   margin: 0 0 20px;
   max-width: 100%;
 }
-
-/* line 93, ../../scss/main.scss */
-#site-footer p {
-  font-size: 21px;
+/* line 13, ../../scss/project.scss */
+.project-page .services {
+  font-family: "Colfax Medium", Helvetica, Arial, sans-serif;
+  color: #33ccff;
 }
+/* line 19, ../../scss/project.scss */
+.project-page .top-line.short {
+  font-size: 1.6em;
+}
+
 /* line 97, ../../scss/main.scss */
+#site-footer p {
+  font-size: 1.5em;
+}
+/* line 101, ../../scss/main.scss */
 #site-footer .pull-up {
   margin-top: -20px;
 }
 
 @media only screen and (min-width: 570px) {
-  /* line 103, ../../scss/main.scss */
+  /* line 107, ../../scss/main.scss */
   html {
     font-size: 12px;
   }
 
-  /* line 107, ../../scss/main.scss */
+  /* line 111, ../../scss/main.scss */
   body {
     padding-top: 100px;
   }
 
-  /* line 111, ../../scss/main.scss */
+  /* line 115, ../../scss/main.scss */
+  p.small {
+    font-size: 1.25rem;
+  }
+
+  /* line 118, ../../scss/main.scss */
+  p.large {
+    font-size: 1.3rem;
+  }
+
+  /* line 122, ../../scss/main.scss */
   h2 {
     font-size: 60px;
   }
 
-  /* line 116, ../../scss/main.scss */
+  /* line 127, ../../scss/main.scss */
   h3 {
     font-size: 30px;
   }
 
-  /* line 120, ../../scss/main.scss */
+  /* line 131, ../../scss/main.scss */
   h4 {
     font-size: 24px;
   }
 
-  /* line 124, ../../scss/main.scss */
+  /* line 135, ../../scss/main.scss */
   #site-footer .pull-up {
     margin-top: 0;
   }
