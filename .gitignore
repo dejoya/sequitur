@@ -15,6 +15,7 @@
 *node_modules
 *.sass-cache
 *.idea
+build
 
 
 # Logs and databases #

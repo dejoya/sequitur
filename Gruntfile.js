@@ -17,9 +17,6 @@ module.exports = function (grunt) {
         files: ['scss/{,*/}*.scss'],
         tasks: ['compass:dev']
       },
-      gruntfile: {
-        files: ['Gruntfile.js']
-      },
       livereload: {
         options: {
           livereload: true
@@ -39,13 +36,6 @@ module.exports = function (grunt) {
                 script: 'app.js',
                 args: ['dev']
             }
-        },
-
-        prod: {
-            options: {
-                script: 'app.js',
-                args: ['production']
-            }
         }
     },
 
@@ -53,9 +43,39 @@ module.exports = function (grunt) {
       dev: {
         options: {
           sassDir: 'scss',
-          specify: ['scss/main.scss', 'scss/ie.scss'],
+          specify: ['scss/main.scss'],
           cssDir: 'public/css'
         }
+      }
+    },
+
+    // these are for build only
+    jade: {
+      production: {
+        files: {
+          'build/index.html': ['views/index.jade'],
+          'build/project.html': ['views/project.jade']
+        },
+        options: {
+          pretty: true
+        }
+      }
+    },
+    
+    clean: {
+      production: ['build']
+    },
+
+    copy: {
+      production: {
+        files: [
+          {
+            expand: true,
+            cwd: 'public/',
+            src: ['images/**', 'fonts/**', 'flash/**', 'js/**', 'css/**', 'video/**'],
+            dest: 'build/'
+          }
+        ]
       }
     }
 
@@ -64,20 +84,28 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-express-server');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
 
-  grunt.registerTask('serve', function(target){
 
-    var expressTask = 'express:dev';
-
-    if (target === 'production'){
-        expressTask = 'express:prod'
-    }
+  grunt.registerTask('serve', function(){
 
     grunt.task.run([
-        'compass:dev',
-        expressTask,
-        'watch'
+      'compass:dev',
+      'express:dev',
+      'watch'
+    ])
+  });
+
+
+  grunt.registerTask('build', function(){
+    grunt.task.run([
+      'clean:production',
+      'compass',
+      'copy:production',
+      'jade:production'
     ])
   });
 
